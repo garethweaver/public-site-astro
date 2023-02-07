@@ -1,0 +1,108 @@
+---
+import 'normalize.css'
+import Fonts from '@components/Fonts/Fonts.astro'
+import Header from '@components/Header/Header.astro'
+import PortfolioList from '@components/Portfolio/PortfolioList.astro'
+import Modal from '@components/Modal/Modal.jsx'
+import Footer from '@components/Footer/Footer.astro'
+
+export interface Props {
+  title: string,
+  description: number,
+}
+
+const { title, description, lockedHeader } = Astro.props
+const { href } = Astro.url
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:image" content="https://ik.imagekit.io/garethweaver/ogimage.jpg"/>
+    <meta property="og:url" content={href}/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content={title}/>
+    <meta property="og:description" content={description}/>
+    <Fonts />
+  </head>
+  <body>
+    <Header lockedHeader={lockedHeader} />
+    <main>
+      <slot />
+      <PortfolioList />
+    </main>
+    <Footer />
+    <Modal client:idle />
+  </body>
+</html>
+
+<style lang="sass" is:global>
+  @import'../style/base'
+
+  :root
+    --max-width: 1400px
+    --max-content-width: 900px
+    --color-href: #e799ba
+    --color-highlight-rgb: 232, 238, 0
+    --color-highlight: rgb(232, 238, 0)
+    --color-bg-rgb: 22, 14, 34
+    --color-bg: rgb(22, 14, 34)
+    --color-fg: #201334
+    --color-grad-primary: #7b35d3
+    --color-grad-primary-sm: #e33583
+    --color-grad-secondary: #a9289f
+    --color-grad-secondary-sm: #7c43d9
+    --font-family-heading: 'Inconsolata', sans-serif
+    --font-family-body: 'Ubuntu', sans-serif
+    --gradient: linear-gradient(135deg, var(--color-grad-primary) 0%, var(--color-grad-secondary) 100%)
+    --rgb-white: 255, 255, 255
+    --rgb-black: 0, 0, 0
+
+  *
+    box-sizing: border-box
+    -webkit-tap-highlight-color: rgba(var(--color-highlight-rgb), 0.5)
+    &:focus
+      outline: 1px solid rgba(255, 255, 255, 0.5)
+
+  html
+    font-size: 18px
+    +media-up(lg)
+      font-size: 22px
+
+  *::selection
+    background: rgba(var(--color-highlight-rgb), 0.9)
+    color: black
+
+  body
+    background: var(--color-bg)
+    color: #ffffff
+    font-family: var(--font-family-body)
+    font-weight: 300
+    padding: 0 1em
+    min-width: 330px
+    +media-up(md)
+      padding: 0 2em
+
+  main
+    +media-up(md)
+      padding-top: 2em
+
+  h1, h2, h3, h4, h5, h6
+    font-family: var(--font-family-heading)
+    font-weight: 800
+
+  a
+    color: var(--color-href)
+    font-family: var(--font-family-heading)
+    text-decoration: none
+
+  .no-scroll
+    overflow: hidden
+</style>

@@ -1,0 +1,37 @@
+---
+const { images } = Astro.props
+---
+
+<>
+  {images.map(image => (
+    <picture>
+      {image.mobile && (
+        <source
+          srcset={image.mobile.url}
+          media="(max-width: 576px)"
+          height={image.mobile.height}
+          width={image.mobile.width} />
+      )}
+      <img
+        loading="lazy"
+        src={image.url}
+        alt={image.alt}
+        height={image.height}
+        width={image.width} />
+    </picture>
+  ))}
+</>
+
+<style lang="sass">
+  picture
+    display: block
+    margin-top: 2em
+
+  img
+    width: 100%
+    border-radius: 0.5em
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08)
+    height: auto
+    background: var(--color-bg)
+    filter: brightness(98%)
+</style>

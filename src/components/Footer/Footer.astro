@@ -1,0 +1,56 @@
+---
+import { menuItems } from '../../data/menu.js'
+import GitButton from '@components/GitButton/GitButton.jsx'
+---
+
+<footer>
+  <nav>
+    <ul>
+      <li>
+        <GitButton client:visible>
+          Github
+        </GitButton>
+      </li>
+      {menuItems.map(item => (
+        <li>
+          <a {...item.props}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+      <li>&copy; Gareth Weaver {new Date().getFullYear()}</li>
+    </ul>
+  </nav>
+</footer>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  footer
+    max-width: var(--max-width)
+    margin: 0 auto
+    padding: 3em 0 6em
+    font-family: var(--font-family-heading)
+    +media-up(md)
+      padding: 4em 0 7em
+
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    text-align: center
+    +media-up(md)
+      text-align: left
+      display: flex
+      justify-content: center
+
+  li
+    margin: 0.75em 0
+    +media-up(md)
+      font-size: 0.8em
+      margin: 0 1em
+
+    :global(button)
+      font-family: var(--font-family-heading)
+      color: var(--color-href)
+</style>

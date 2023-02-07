@@ -1,0 +1,46 @@
+---
+// export interface Props {
+//  title: string
+//  body: string
+//  foo: string
+// }
+import PortfolioFooter from './PortfolioFooter.astro'
+import PortfolioInfo from './PortfolioInfo.astro'
+import PortfolioImages from './PortfolioImages.astro'
+const { title, body, type, tools, year, images, live_site, repository, next_page } = Astro.props
+---
+
+<article class="PortfolioDetail">
+  <div class="inner">
+    <h1>{title}</h1>
+    <PortfolioInfo info={[type, tools, year]} />
+    <div class="body" set:html={body} />
+    <PortfolioImages images={images} />
+    <PortfolioFooter href={live_site} next={next_page} repository={repository} />
+  </div>
+</article>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  .PortfolioDetail
+    background: var(--color-fg)
+    max-width: var(--max-width)
+    margin: 0 auto
+    padding: 2em 1em
+    border-radius: 0.5em
+    +media-up(md)
+      padding: 2em
+
+  .inner
+    margin: 0 auto
+    max-width: var(--max-content-width)
+    +media-up(md)
+      padding-top: 8rem
+
+  h1
+    margin: 0 0 0.25em
+
+  .body
+    line-height: 1.5
+</style>

@@ -1,0 +1,141 @@
+---
+import Icon from '@components/Icon/Icon.astro'
+import Menu from '@components/Menu/Menu.astro'
+const { lockedHeader } = Astro.props
+---
+<header data-header-root class={lockedHeader && 'scrolled'}>
+  <nav>
+    <a
+      aria-label="Go to homepage"
+      class="home link"
+      href="/">
+      <Icon use="code" />
+      garethweaver.com
+    </a>
+    <button
+      data-menu-toggle
+      type="button"
+      aria-label="Toggle mobile menu open closed"
+      class="toggle">
+      <Icon use="toggle" />
+    </button>
+    <div class="menu">
+      <Menu />
+    </div>
+  </nav>
+  <div class="background" />
+</header>
+
+<script define:vars={{ lockedHeader: lockedHeader || false }}>
+  const header = document.querySelector('[data-header-root]')
+  const toggle = document.querySelector('[data-menu-toggle]')
+
+  const handleOnScroll = () => {
+    window.scrollY > 0
+      ? header.classList.add('scrolled')
+      : header.classList.remove('scrolled')
+  }
+
+  const handleClick = () => {
+    header.classList.contains('open')
+      ? header.classList.remove('open')
+      : header.classList.add('open')
+  }
+
+  if (!lockedHeader) window.addEventListener('scroll', handleOnScroll)
+  toggle.addEventListener('click', handleClick)
+</script>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  +media-up(md)
+    header
+      position: fixed
+      left: 0
+      right: 0
+      z-index: 2
+
+  nav
+    max-width: calc(var(--max-width) + 4em)
+    margin: 0 auto
+    padding: 1em 0
+    z-index: 2
+    position: relative
+    display: grid
+    grid-template-columns: min-content auto min-content
+
+    :global(.link:hover svg)
+      transform: scale(1.15)
+      fill: white
+
+    :global(svg)
+      display: block
+      fill: white
+      transition: all 0.3s
+
+  .home
+    display: flex
+    align-items: center
+    transition: color 0.3s
+    color: white
+
+    // don't scale too much
+    +media-down(lg)
+      font-size: 1.1rem
+
+    :global(svg)
+      margin-right: 0.5em
+      +media-up(md)
+        margin-right: 0.25em
+
+  .toggle
+    background: none
+    border: none
+    padding: 0
+    transition: transform 0.2s
+    cursor: pointer
+    grid-column-start: 3
+
+    +media-up(md)
+      display: none
+
+  .menu
+    grid-column-start: 3
+    +media-down(sm)
+      grid-column: span 3
+      height: 0
+      overflow: hidden
+      transition: height 0.3s
+
+      @at-root .open &
+        height: 180px
+
+  // scrolled styles
+  +media-up(md)
+    .background
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      height: 0
+      background: var(--color-bg)
+      z-index: 1
+      transition: height 0.3s
+
+    nav
+      padding: 3.5em 3.5em 0
+      transition: padding 0.3s
+
+    :global(.scrolled)
+      .background
+        height: 70px
+      nav
+        padding: 1em 2em
+      :global(svg)
+        fill: #bfb3d2
+      :global(.link)
+        color: #bfb3d2
+        &:hover
+          color: white
+</style>

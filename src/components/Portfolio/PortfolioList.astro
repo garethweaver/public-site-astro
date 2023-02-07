@@ -1,0 +1,76 @@
+---
+const items = await Astro.glob('../../content/portfolio/*.md')
+items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
+---
+
+<nav>
+  <ul>
+    {items.map((item, idx) => (
+      <li
+        class="item"
+        style={item.frontmatter.thumb.gradient && {
+          background: `linear-gradient(${
+            item.frontmatter.thumb.gradient
+          }deg, var(--color-grad-primary-sm), var(--color-grad-secondary-sm));`
+        }}>
+        {item.frontmatter.external ? (
+          <a
+            target="_blank"
+            rel="nofollow"
+            href={item.frontmatter.url}>
+            <img
+              src={item.frontmatter.thumb?.url}
+              width="800"
+              height="600"
+              loading={idx > 0 ? 'lazy' : 'eager'}
+              alt={item.frontmatter.title}
+            />
+          </a>
+        ) : (
+          <a
+            rel="prefetch"
+            href={`/portfolio/${item.frontmatter.slug}`}>
+            <img
+              src={item.frontmatter.thumb?.url}
+              width="800"
+              height="600"
+              loading={idx > 0 ? 'lazy' : 'eager'}
+              alt={item.frontmatter.title}
+            />
+          </a>
+        )}
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  ul
+    max-width: var(--max-width)
+    margin: 0 auto
+    list-style: none
+    padding: 0
+    border-radius: 0.5em
+    overflow: hidden
+    margin-top: 1em
+    background: var(--color-grad-primary)
+    +media-up(sm)
+      display: grid
+      margin-top: 2em
+      grid-template-columns: repeat(2, 1fr)
+
+    +media-up(md)
+      grid-template-columns: repeat(3, 1fr)
+
+  a
+    display: block
+    background: rgba(0, 0, 0, 0.2)
+    display: block
+
+  img
+    display: block
+    width: 100%
+    height: auto
+</style>

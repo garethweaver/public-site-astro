@@ -1,0 +1,39 @@
+---
+const { href, repository, next } = Astro.props
+---
+
+<aside>
+  <nav>
+    {href &&
+      <a href={href} target="_blank">
+        Visit
+      </a>
+    }
+    {repository &&
+      <a href={repository} target="_blank">
+        Github
+      </a>
+    }
+    {next &&
+      <a href={`/portfolio${next}`}>
+        Next
+      </a>
+    }
+  </nav>
+</aside>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  nav
+    margin: 1em 0 2em
+
+    +media-up(md)
+      display: flex
+      justify-content: center
+
+  a
+    display: block
+    padding: 1rem
+    text-align: center
+</style>
