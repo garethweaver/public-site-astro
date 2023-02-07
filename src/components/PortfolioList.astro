@@ -1,0 +1,32 @@
+---
+const items = await Astro.glob('../content/portfolio/*.md');
+---
+
+<ul>
+  {items.map(item => (
+    <li class="item">
+      <a
+        rel="prefetch"
+        href={`/portfolio/${item.frontmatter.slug}`}>
+        {item.frontmatter.title}
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style lang="sass">
+  @import'../style/_variables.sass'
+
+  ul
+    max-width: $max-width
+    margin: 0 auto
+    list-style: none
+    padding: 0
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+
+  a
+    display: block
+    padding-top: 66.666%
+    border: 1px $color-href solid
+</style>

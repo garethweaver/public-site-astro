@@ -1,0 +1,37 @@
+---
+// export interface Props {
+//  title: string;
+//  body: string;
+//  foo: string;
+// }
+const { title, body, type, tools, year } = Astro.props;
+---
+
+<div class="PortfolioDetail">
+  <main class="inner">
+    <h1>{title}</h1>
+    <ul>
+      <li>{type}</li>
+      <li>{tools}</li>
+      <li>{year}</li>
+    </ul>
+    <div set:html={body} />
+  </main>
+</div>
+
+<style lang="sass">
+  @import'../style/_variables.sass'
+
+  .PortfolioDetail
+    background: #231c38
+    max-width: $max-width
+    margin: 0 auto
+
+  .inner
+    margin: 0 auto
+    max-width: 900px
+
+  ul
+    list-style: none
+    padding: 0
+</style>

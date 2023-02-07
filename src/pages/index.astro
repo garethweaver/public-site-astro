@@ -1,0 +1,19 @@
+---
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <div class="intro" />
+  </main>
+</Layout>
+
+<style lang="sass">
+  @import'../style/_variables.sass'
+
+  .intro
+    max-width: $max-width
+    margin: 0 auto
+    padding-top: 70vh
+    background: #201334
+</style>
