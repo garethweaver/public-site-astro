@@ -5,8 +5,6 @@ order: 180
 thumb:
 - type: jpg
   name: avatars.jpg
-- type: webp
-  name: avatars.webp
 title: Wonderbly Avatars
 external: false
 type: React Component
@@ -14,46 +12,20 @@ year: 2021
 tools: React, Hooks, Sass
 live_site: https://www.wonderbly.com/personalized-products/super-epic-love-quest-book
 images:
-- - resolution: mobile
-    type: jpg
-    name: avatars-1-sm.jpg
-    height: 900
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: avatars-1-sm.webp
-    height: 900
-    width: 600
-  - resolution: desktop
-    type: jpg
-    name: avatars-1-lg.jpg
+  - url: https://ik.imagekit.io/garethweaver/avatars-1-lg.jpg
     height: 1067
     width: 1200
-  - resolution: desktop
-    type: webp
-    name: avatars-1-lg.webp
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/avatars-1-sm.jpg
+      height: 900
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/avatars-2-lg.jpg
     height: 1067
     width: 1200
-- - resolution: mobile
-    type: jpg
-    name: avatars-2-sm.jpg
-    height: 900
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: avatars-2-sm.webp
-    height: 900
-    width: 600
-  - resolution: desktop
-    type: jpg
-    name: avatars-2-lg.jpg
-    height: 1067
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: avatars-2-lg.webp
-    height: 1067
-    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/avatars-2-sm.jpg
+      height: 900
+      width: 600
 next_page: /in2touch
 meta:
   title: Gareth Weaver - Wonderbly Avatars

@@ -5,8 +5,6 @@ order: 110
 thumb:
   - type: jpg
     name: hoher.jpg
-  - type: webp
-    name: hoher.webp
 title: Höher Backpacks
 external: false
 type: Microsite
@@ -14,26 +12,13 @@ year: 2018
 tools: Photoshop, Middleman, Haml, Sass
 repository: https://github.com/garethweaver/hoher
 images:
-- - resolution: desktop
-    type: jpg
-    name: hoher-1-lg.jpg
+  - url: https://ik.imagekit.io/garethweaver/hoher-1-lg.jpg
     height: 3335
     width: 1200
-  - resolution: desktop
-    type: webp
-    name: hoher-1-lg.webp
-    height: 3335
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: hoher-1-sm.jpg
-    height: 1668
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: hoher-1-sm.webp
-    height: 1668
-    width: 600
+    mobile:
+      name: https://ik.imagekit.io/garethweaver/hoher-1-sm.jpg
+      height: 1668
+      width: 600
 next_page: /south-london-touch
 meta:
   title: Gareth Weaver - Höher Backpacks

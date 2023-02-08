@@ -1,19 +1,27 @@
 ---
 // export interface Props {
-//  title: string;
-//  body: string;
-//  href: string;
+//  title: string
+//  body: string
+//  href: string
 // }
 // import FolioSubfooter from './folio-subfooter'
-// const { title, content, type, tools, year } = Astro.props;
+// const { title, content, type, tools, year } = Astro.props
+import { menuItems } from '../data/menu.js'
 ---
 
 <nav>
   <a href="/">Home</a>
-</div>
+  {menuItems.map(item => (
+    <li>
+      <a href={item.href} target="_blank">
+      {item.title}
+    </a>
+    </li>
+  ))}
+</nav>
 
 <style lang="sass">
-  @import'../style/_variables.sass'
+  @import'../style/base'
 
   nav
     max-width: $max-width

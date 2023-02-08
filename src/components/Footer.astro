@@ -1,0 +1,26 @@
+---
+import { menuItems } from '../data/menu.js'
+---
+
+<footer>
+  <nav>
+    <ul>
+      {menuItems.map(item => (
+        <li>
+          <a href={item.href} target="_blank">
+          {item.title}
+        </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</footer>
+
+<style lang="sass">
+  @import'../style/base'
+
+  footer
+    max-width: $max-width
+    margin: 0 auto
+    padding: 20px 0
+</style>

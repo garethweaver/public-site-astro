@@ -13,44 +13,25 @@ tools: Illustrator
 live_site: http://www.southlondontouchrugby.co.uk/
 repository: https://github.com/garethweaver/sltrc
 images:
-- - resolution: desktop
-    type: gif
-    name: south-london-touch-1-lg.gif
-    height: 1000
-    width: 1200
-  - resolution: mobile
-    type: gif
-    name: south-london-touch-1-sm.gif
+- url: https://ik.imagekit.io/garethweaver/south-london-touch-1-lg.gif
+  height: 1000
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/south-london-touch-1-sm.gif
     height: 695
     width: 600
-- - resolution: desktop
-    type: gif
-    name: south-london-touch-2-lg.gif
-    height: 1000
-    width: 1200
-  - resolution: mobile
-    type: gif
-    name: south-london-touch-2-sm.gif
+- url: https://ik.imagekit.io/garethweaver/south-london-touch-2-lg.gif
+  height: 1000
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/south-london-touch-2-sm.gif
     height: 600
     width: 600
-- - resolution: desktop
-    type: jpg
-    name: south-london-touch-3-lg.jpg
-    height: 1000
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: south-london-touch-3-lg.webp
-    height: 1000
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: south-london-touch-3-sm.jpg
-    height: 540
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: south-london-touch-3-sm.webp
+- url: https://ik.imagekit.io/garethweaver/south-london-touch-3-lg.jpg
+  height: 1000
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/south-london-touch-3-sm.jpg
     height: 540
     width: 600
 next_page: /stella-mccartney-tumblr

@@ -5,8 +5,6 @@ order: 160
 thumb:
 - type: jpg
   name: maison-hanko.jpg
-- type: webp
-  name: maison-hanko.webp
 title: Maison Hanko
 external: false
 type: Static site
@@ -14,46 +12,20 @@ year: 2019
 tools: React, GatsbyJS, Sass
 live_site: https://maisonhanko.com
 images:
-- - resolution: mobile
-    type: jpg
-    name: maison-hanko-1-sm.jpg
+- url: https://ik.imagekit.io/garethweaver/maison-hanko-1-lg.jpg
+  height: 4083
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/maison-hanko-1-sm.jpg
     height: 2042
     width: 600
-  - resolution: mobile
-    type: webp
-    name: maison-hanko-1-sm.webp
-    height: 2042
-    width: 600
-  - resolution: desktop
-    type: jpg
-    name: maison-hanko-1-lg.jpg
-    height: 4083
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: maison-hanko-1-lg.webp
-    height: 4083
-    width: 1200
-- - resolution: mobile
-    type: jpg
-    name: maison-hanko-2-sm.jpg
+- url: https://ik.imagekit.io/garethweaver/maison-hanko-2-lg.jpg
+  height: 2800
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/maison-hanko-2-sm.jpg
     height: 1400
     width: 600
-  - resolution: mobile
-    type: webp
-    name: maison-hanko-2-sm.webp
-    height: 1400
-    width: 600
-  - resolution: desktop
-    type: jpg
-    name: maison-hanko-2-lg.jpg
-    height: 2800
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: maison-hanko-2-lg.webp
-    height: 2800
-    width: 1200
 next_page: /sipa-beer
 meta:
   title: Gareth Weaver - Maison Hanko

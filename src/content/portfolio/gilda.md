@@ -5,8 +5,6 @@ order: 140
 thumb:
 - type: jpg
   name: gilda.jpg
-- type: webp
-  name: gilda.webp
 title: GILDA, Nexus Studios
 external: false
 type: Static Page
@@ -14,24 +12,11 @@ year: 2019
 tools: ES6, Handlebars, Sass, Webpack
 live_site: http://gilda.co
 images:
-- - resolution: desktop
-    type: jpg
-    name: gilda-1-lg.jpg
-    height: 7092
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: gilda-1-lg.webp
-    height: 7092
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: gilda-1-sm.jpg
-    height: 3546
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: gilda-1-sm.webp
+- url: https://ik.imagekit.io/garethweaver/gilda-1-lg.jpg
+  height: 7092
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/gilda-1-sm.jpg
     height: 3546
     width: 600
 next_page: /business-three-zero-fuel

@@ -12,24 +12,10 @@ year: 2016
 tools: CoffeeScript
 live_site: http://api-docs.bigsofa.co.uk/player
 images:
-- - resolution: desktop
-    type: jpg
-    name: media-player-1-lg.jpg
+  - url: https://ik.imagekit.io/garethweaver/media-player-1-lg.jpg
     height: 900
     width: 900
-  - resolution: desktop
-    type: webp
-    name: media-player-1-lg.webp
-    height: 900
-    width: 900
-- - resolution: desktop
-    type: jpg
-    name: media-player-2-lg.jpg
-    height: 900
-    width: 900
-  - resolution: desktop
-    type: webp
-    name: media-player-2-lg.webp
+  - url: https://ik.imagekit.io/garethweaver/media-player-2-lg.jpg
     height: 900
     width: 900
 next_page: /illustration

@@ -5,8 +5,6 @@ order: 90
 thumb:
 - type: jpg
   name: stella-mccartney.jpg
-- type: webp
-  name: stella-mccartney.webp
 title: Stella McCartney Tumblr
 external: false
 type: ES6 Application for Tumblr
@@ -14,46 +12,20 @@ year: 2015
 tools: ES6, Tumlr, Sass
 live_site: http://stellamccartney.tumblr.com/
 images:
-- - resolution: desktop
-    type: jpg
-    name: stella-mccartney-1-lg.jpg
+  - url: https://ik.imagekit.io/garethweaver/stella-mccartney-1-lg.jpg
     height: 1648
     width: 1200
-  - resolution: desktop
-    type: webp
-    name: stella-mccartney-1-lg.webp
-    height: 1648
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: stella-mccartney-1-sm.jpg
-    height: 824
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: stella-mccartney-1-sm.webp
-    height: 824
-    width: 600
-- - resolution: desktop
-    type: jpg
-    name: stella-mccartney-2-lg.jpg
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/stella-mccartney-1-sm.jpg
+      height: 824
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/stella-mccartney-2-lg.jpg
     height: 1339
     width: 1200
-  - resolution: desktop
-    type: webp
-    name: stella-mccartney-2-lg.webp
-    height: 1339
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: stella-mccartney-2-sm.jpg
-    height: 670
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: stella-mccartney-2-sm.webp
-    height: 670
-    width: 600
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/stella-mccartney-2-sm.jpg
+      height: 670
+      width: 600
 next_page: /big-sofa
 meta:
   title: Gareth Weaver - Stella McCartney Tumlr

@@ -11,66 +11,27 @@ type: Angular Web Application
 year: 2015
 tools: Angular 1, CoffeeScript, Sass, Haml
 images:
-- - resolution: desktop
-    type: jpg
-    name: dove-concept-adverts-1-lg.jpg
+  - url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-1-lg.jpg
     height: 800
     width: 1200
-  - resolution: desktop
-    type: webp
-    name: dove-concept-adverts-1-lg.webp
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-1-sm.jpg
+      height: 400
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-2-lg.jpg
     height: 800
     width: 1200
-  - resolution: mobile
-    type: jpg
-    name: dove-concept-adverts-1-sm.jpg
-    height: 400
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: dove-concept-adverts-1-sm.webp
-    height: 400
-    width: 600
-- - resolution: desktop
-    type: jpg
-    name: dove-concept-adverts-2-lg.jpg
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-2-sm.jpg
+      height: 400
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-3-lg.jpg
     height: 800
     width: 1200
-  - resolution: desktop
-    type: webp
-    name: dove-concept-adverts-2-lg.webp
-    height: 800
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: dove-concept-adverts-2-sm.jpg
-    height: 400
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: dove-concept-adverts-2-sm.webp
-    height: 400
-    width: 600
-- - resolution: desktop
-    type: jpg
-    name: dove-concept-adverts-3-lg.jpg
-    height: 800
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: dove-concept-adverts-3-lg.webp
-    height: 800
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: dove-concept-adverts-3-sm.jpg
-    height: 400
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: dove-concept-adverts-3-sm.webp
-    height: 400
-    width: 600
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-3-sm.jpg
+      height: 400
+      width: 600
 next_page: /this-site
 meta:
   title: Gareth Weaver - Dove Concept Advert Repository

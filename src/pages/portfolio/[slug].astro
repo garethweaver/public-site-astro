@@ -1,9 +1,9 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import PortolioDetail from '@components/PortfolioDetail.astro';
+import Layout from '@layouts/Layout.astro'
+import PortolioDetail from '@components/PortfolioDetail.astro'
 
 export async function getStaticPaths() {
-  const items = await Astro.glob('../../content/portfolio/*.md');
+  const items = await Astro.glob('../../content/portfolio/*.md')
 
   return items.map(item => {
     return {
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
   })
 }
 
-const { slug } = Astro.params;
+const { slug } = Astro.params
 ---
 
 <Layout title="Portfolio">

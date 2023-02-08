@@ -1,19 +1,33 @@
 ---
-import Layout from '@layouts/Layout.astro';
+import Layout from '@layouts/Layout.astro'
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <div class="intro" />
+    <div class="intro">
+        <h1>
+          PWAs &amp;<br />Engineering
+        </h1>
+        <h2>
+          Let’s talk about websites, webapps, rugby or just the weather.
+          I’m a frontend developer and I live in London, UK.
+        </h2>
+      <div>
   </main>
 </Layout>
 
 <style lang="sass">
-  @import'../style/_variables.sass'
+  @import'../style/base'
 
   .intro
     max-width: $max-width
     margin: 0 auto
-    padding-top: 70vh
-    background: #201334
+    padding: 40px
+    background: linear-gradient(135deg, #7b35d3 0%, #a9289f 100%)
+    min-height: 90vh
+    border-radius: 8px
+  h2
+    font-family: $font-family-body
+    font-size: 1em
+    font-weight: 400
 </style>

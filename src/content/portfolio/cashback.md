@@ -11,14 +11,7 @@ type: Website Design
 year: 2014
 tools: Photoshop
 images:
-- - resolution: desktop
-    type: jpg
-    name: cashback-card-1.jpg
-    height: 3473
-    width: 900
-  - resolution: desktop
-    type: webp
-    name: cashback-card-1.webp
+  - url: https://ik.imagekit.io/garethweaver/cashback-card-1.jpg
     height: 3473
     width: 900
 next_page: /hoher-backpacks

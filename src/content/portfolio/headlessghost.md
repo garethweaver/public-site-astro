@@ -5,8 +5,6 @@ order: 60
 thumb:
 - type: jpg
   name: headless-ghost.jpg
-- type: webp
-  name: headless-ghost.webp
 title: Headless Ghost
 external: false
 type: Website Design &amp; Build
@@ -15,14 +13,7 @@ tools: Photoshop, Middleman, Haml, Scss, AngularJs
 live_site: http://www.headlessghost.com/
 repository: https://github.com/garethweaver/headlessghost
 images:
-- - resolution: desktop
-    type: jpg
-    name: headless-ghost-1.jpg
-    height: 3438
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: headless-ghost-1.webp
+  - url: https://ik.imagekit.io/garethweaver/headless-ghost-1.jpg
     height: 3438
     width: 1200
 next_page: /dove-concept-adverts

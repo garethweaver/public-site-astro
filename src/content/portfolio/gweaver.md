@@ -5,8 +5,6 @@ order: 0
 thumb:
 - type: jpg
   name: gareth-weaver.jpg
-- type: webp
-  name: gareth-weaver.webp
 title: This Website
 external: false
 type: Static site
@@ -14,24 +12,11 @@ year: 2018
 tools: Photoshop, GatsbyJs, React, Sass
 repository: https://github.com/garethweaver/public-site-react
 images:
-- - resolution: desktop
-    type: jpg
-    name: gareth-weaver-1-lg.jpg
-    height: 1166
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: gareth-weaver-1-lg.webp
-    height: 1166
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: gareth-weaver-1-sm.jpg
-    height: 583
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: gareth-weaver-1-sm.webp
+- url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-lg.jpg
+  height: 1166
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-sm.jpg
     height: 583
     width: 600
 next_page: /embedded-media-player

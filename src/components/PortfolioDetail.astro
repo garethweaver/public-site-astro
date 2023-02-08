@@ -1,10 +1,10 @@
 ---
 // export interface Props {
-//  title: string;
-//  body: string;
-//  foo: string;
+//  title: string
+//  body: string
+//  foo: string
 // }
-const { title, body, type, tools, year } = Astro.props;
+const { title, body, type, tools, year, images } = Astro.props
 ---
 
 <div class="PortfolioDetail">
@@ -16,16 +16,34 @@ const { title, body, type, tools, year } = Astro.props;
       <li>{year}</li>
     </ul>
     <div set:html={body} />
+    {images.map(image => (
+      <picture>
+        {image.mobile && (
+          <source
+            srcset={image.mobile.url}
+            media="(max-width: 576px)"
+            height={image.mobile.height}
+            width={image.mobile.width} />
+        )}
+        <img
+          loading="lazy"
+          src={image.url}
+          alt={image.alt}
+          height={image.height}
+          width={image.width} />
+      </picture>
+    ))}
   </main>
 </div>
 
 <style lang="sass">
-  @import'../style/_variables.sass'
+  @import'../style/base'
 
   .PortfolioDetail
-    background: #231c38
+    background: $color-fg
     max-width: $max-width
     margin: 0 auto
+    padding: 20px
 
   .inner
     margin: 0 auto
@@ -34,4 +52,15 @@ const { title, body, type, tools, year } = Astro.props;
   ul
     list-style: none
     padding: 0
+
+  picture
+    display: block
+    margin-top: 40px
+
+  img
+    width: 100%
+    border-radius: 12px
+    box-shadow: 0 0 60px rgba($color-href, 0.08)
+    height: auto
+    background: darken($color-bg, 2%)
 </style>

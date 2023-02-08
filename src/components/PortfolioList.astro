@@ -1,5 +1,8 @@
 ---
-const items = await Astro.glob('../content/portfolio/*.md');
+const items = await Astro.glob('../content/portfolio/*.md')
+items.sort((a, b) => {
+  return b.frontmatter.order - a.frontmatter.order
+})
 ---
 
 <ul>
@@ -15,7 +18,7 @@ const items = await Astro.glob('../content/portfolio/*.md');
 </ul>
 
 <style lang="sass">
-  @import'../style/_variables.sass'
+  @import'../style/base'
 
   ul
     max-width: $max-width
@@ -24,9 +27,12 @@ const items = await Astro.glob('../content/portfolio/*.md');
     padding: 0
     display: grid
     grid-template-columns: repeat(3, 1fr)
+    border-radius: 12px
+    overflow: hidden
+    margin-top: 40px
 
   a
     display: block
     padding-top: 66.666%
-    border: 1px $color-href solid
+    background: rgba(black, 0.2)
 </style>

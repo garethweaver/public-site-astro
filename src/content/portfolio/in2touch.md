@@ -5,8 +5,6 @@ order: 170
 thumb:
   - type: jpg
     name: in2touch.jpg
-  - type: webp
-    name: in2touch.webp
 title: In2Touch App
 external: false
 type: React Application
@@ -15,64 +13,25 @@ tools: React, Redux, Firebase, Node, Sass
 repository: https://github.com/garethweaver/in2touch-react
 live_site: https://garethweaver.github.io/in2touch-react/
 images:
-- - resolution: desktop
-    type: jpg
-    name: in2touch-1-lg.jpg
-    height: 1067
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: in2touch-1-lg.webp
-    height: 1067
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: in2touch-1-sm.jpg
+- url: https://ik.imagekit.io/garethweaver/in2touch-1-lg.jpg
+  height: 1067
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/in2touch-1-sm.jpg
     height: 1067
     width: 600
-  - resolution: mobile
-    type: webp
-    name: in2touch-1-sm.webp
+- url: https://ik.imagekit.io/garethweaver/in2touch-2-lg.jpg
+  height: 1067
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/in2touch-2-sm.jpg
     height: 1067
     width: 600
-- - resolution: desktop
-    type: jpg
-    name: in2touch-2-lg.jpg
-    height: 1067
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: in2touch-2-lg.webp
-    height: 1067
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: in2touch-2-sm.jpg
-    height: 1067
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: in2touch-2-sm.webp
-    height: 1067
-    width: 600
-- - resolution: desktop
-    type: jpg
-    name: in2touch-3-lg.jpg
-    height: 1067
-    width: 1200
-  - resolution: desktop
-    type: webp
-    name: in2touch-3-lg.webp
-    height: 1067
-    width: 1200
-  - resolution: mobile
-    type: jpg
-    name: in2touch-3-sm.jpg
-    height: 1067
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: in2touch-3-sm.webp
+- url: https://ik.imagekit.io/garethweaver/in2touch-3-lg.jpg
+  height: 1067
+  width: 1200
+  mobile:
+    url: https://ik.imagekit.io/garethweaver/in2touch-3-sm.jpg
     height: 1067
     width: 600
 next_page: /maison-hanko

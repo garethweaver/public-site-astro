@@ -5,34 +5,19 @@ order: 150
 thumb:
 - type: jpg
   name: sipa.jpg
-- type: webp
-  name: sipa.webp
 title: SIPA Beer
 external: false
 type: Label Design
 year: 2020
 tools: Illustrator
 images:
-- - resolution: mobile
-    type: jpg
-    name: sipa-sm.jpg
-    height: 1000
-    width: 600
-  - resolution: mobile
-    type: webp
-    name: sipa-sm.webp
-    height: 1000
-    width: 600
-  - resolution: desktop
-    type: jpg
-    name: sipa-lg.jpg
+  - url: https://ik.imagekit.io/garethweaver/sipa-lg.jpg
     height: 1200
     width: 1200
-  - resolution: desktop
-    type: webp
-    name: sipa-lg.webp
-    height: 1200
-    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/sipa-sm.jpg
+      height: 1000
+      width: 600
 next_page: /gilda
 meta:
   title: Gareth Weaver - SIPA Beer
