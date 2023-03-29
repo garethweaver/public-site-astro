@@ -3,8 +3,7 @@ slug: stella-mccartney-tumblr
 url: /folio/stella-mccartney-tumblr
 order: 90
 thumb:
-- type: jpg
-  name: stella-mccartney.jpg
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: Stella McCartney Tumblr
 external: false
 type: ES6 Application for Tumblr
@@ -13,6 +12,7 @@ tools: ES6, Tumlr, Sass
 live_site: http://stellamccartney.tumblr.com/
 images:
   - url: https://ik.imagekit.io/garethweaver/stella-mccartney-1-lg.jpg
+    alt:
     height: 1648
     width: 1200
     mobile:
@@ -20,6 +20,7 @@ images:
       height: 824
       width: 600
   - url: https://ik.imagekit.io/garethweaver/stella-mccartney-2-lg.jpg
+    alt:
     height: 1339
     width: 1200
     mobile:

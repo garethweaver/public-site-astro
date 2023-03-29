@@ -3,8 +3,7 @@ slug: maison-hanko
 url: /folio/maison-hanko
 order: 160
 thumb:
-- type: jpg
-  name: maison-hanko.jpg
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: Maison Hanko
 external: false
 type: Static site
@@ -12,20 +11,22 @@ year: 2019
 tools: React, GatsbyJS, Sass
 live_site: https://maisonhanko.com
 images:
-- url: https://ik.imagekit.io/garethweaver/maison-hanko-1-lg.jpg
-  height: 4083
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/maison-hanko-1-sm.jpg
-    height: 2042
-    width: 600
-- url: https://ik.imagekit.io/garethweaver/maison-hanko-2-lg.jpg
-  height: 2800
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/maison-hanko-2-sm.jpg
-    height: 1400
-    width: 600
+  - url: https://ik.imagekit.io/garethweaver/maison-hanko-1-lg.jpg
+    alt:
+    height: 4083
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/maison-hanko-1-sm.jpg
+      height: 2042
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/maison-hanko-2-lg.jpg
+    alt:
+    height: 2800
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/maison-hanko-2-sm.jpg
+      height: 1400
+      width: 600
 next_page: /sipa-beer
 meta:
   title: Gareth Weaver - Maison Hanko

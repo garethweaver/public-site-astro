@@ -3,8 +3,7 @@ slug: in2touch
 url: /folio/in2touch
 order: 170
 thumb:
-  - type: jpg
-    name: in2touch.jpg
+  url: //via.placeholder.com/850x620/a9289f/ffffff
 title: In2Touch App
 external: false
 type: React Application
@@ -13,27 +12,30 @@ tools: React, Redux, Firebase, Node, Sass
 repository: https://github.com/garethweaver/in2touch-react
 live_site: https://garethweaver.github.io/in2touch-react/
 images:
-- url: https://ik.imagekit.io/garethweaver/in2touch-1-lg.jpg
-  height: 1067
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/in2touch-1-sm.jpg
+  - url: https://ik.imagekit.io/garethweaver/in2touch-1-lg.jpg
+    alt:
     height: 1067
-    width: 600
-- url: https://ik.imagekit.io/garethweaver/in2touch-2-lg.jpg
-  height: 1067
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/in2touch-2-sm.jpg
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/in2touch-1-sm.jpg
+      height: 1067
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/in2touch-2-lg.jpg
+    alt:
     height: 1067
-    width: 600
-- url: https://ik.imagekit.io/garethweaver/in2touch-3-lg.jpg
-  height: 1067
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/in2touch-3-sm.jpg
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/in2touch-2-sm.jpg
+      height: 1067
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/in2touch-3-lg.jpg
+    alt:
     height: 1067
-    width: 600
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/in2touch-3-sm.jpg
+      height: 1067
+      width: 600
 next_page: /maison-hanko
 meta:
   title: Gareth Weaver - In2Touch App

@@ -8,12 +8,10 @@ export async function getStaticPaths() {
   return items.map(item => {
     return {
       params: { slug: item.frontmatter.slug },
-      props: { ...item.frontmatter, body: item.compiledContent()},
+      props: { ...item.frontmatter, body: item.compiledContent() },
     }
   })
 }
-
-const { slug } = Astro.params
 ---
 
 <Layout title="Portfolio">

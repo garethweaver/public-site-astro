@@ -3,8 +3,7 @@ slug: hoher-backpacks
 url: /folio/hoher-backpacks
 order: 110
 thumb:
-  - type: jpg
-    name: hoher.jpg
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: Höher Backpacks
 external: false
 type: Microsite
@@ -13,6 +12,7 @@ tools: Photoshop, Middleman, Haml, Sass
 repository: https://github.com/garethweaver/hoher
 images:
   - url: https://ik.imagekit.io/garethweaver/hoher-1-lg.jpg
+    alt:
     height: 3335
     width: 1200
     mobile:

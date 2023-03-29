@@ -3,8 +3,7 @@ slug: cashbackcard
 url: /folio/cashbackcard
 order: -35
 thumb:
-- type: gif
-  name: cashback-card.gif
+  url: //via.placeholder.com/850x620/a9289f/ffffff
 title: CashbackCard.com
 external: false
 type: Website Design
@@ -12,6 +11,7 @@ year: 2014
 tools: Photoshop
 images:
   - url: https://ik.imagekit.io/garethweaver/cashback-card-1.jpg
+    alt:
     height: 3473
     width: 900
 next_page: /hoher-backpacks

@@ -3,8 +3,7 @@ slug: embedded-media-player
 url: /folio/embedded-media-player
 order: -10
 thumb:
-- type: gif
-  name: media-player.gif
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: Embedded Media Player
 external: false
 type: Javascript Widget
@@ -13,9 +12,11 @@ tools: CoffeeScript
 live_site: http://api-docs.bigsofa.co.uk/player
 images:
   - url: https://ik.imagekit.io/garethweaver/media-player-1-lg.jpg
+    alt:
     height: 900
     width: 900
   - url: https://ik.imagekit.io/garethweaver/media-player-2-lg.jpg
+    alt:
     height: 900
     width: 900
 next_page: /illustration

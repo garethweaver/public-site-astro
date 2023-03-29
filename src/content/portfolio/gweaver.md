@@ -3,8 +3,7 @@ slug: this-site
 url: /folio/this-site
 order: 0
 thumb:
-- type: jpg
-  name: gareth-weaver.jpg
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: This Website
 external: false
 type: Static site
@@ -12,13 +11,14 @@ year: 2018
 tools: Photoshop, GatsbyJs, React, Sass
 repository: https://github.com/garethweaver/public-site-react
 images:
-- url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-lg.jpg
-  height: 1166
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-sm.jpg
-    height: 583
-    width: 600
+  - url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-lg.jpg
+    alt:
+    height: 1166
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-sm.jpg
+      height: 583
+      width: 600
 next_page: /embedded-media-player
 meta:
   title: Gareth Weaver - I built this with Gatsby and React

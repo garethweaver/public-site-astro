@@ -3,8 +3,7 @@ slug: south-london-touch
 url: /folio/south-london-touch
 order: 100
 thumb:
-- type: gif
-  name: south-london-touch.gif
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: South London Touch Rugby
 external: false
 type: Logo Redesign
@@ -13,27 +12,30 @@ tools: Illustrator
 live_site: http://www.southlondontouchrugby.co.uk/
 repository: https://github.com/garethweaver/sltrc
 images:
-- url: https://ik.imagekit.io/garethweaver/south-london-touch-1-lg.gif
-  height: 1000
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/south-london-touch-1-sm.gif
-    height: 695
-    width: 600
-- url: https://ik.imagekit.io/garethweaver/south-london-touch-2-lg.gif
-  height: 1000
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/south-london-touch-2-sm.gif
-    height: 600
-    width: 600
-- url: https://ik.imagekit.io/garethweaver/south-london-touch-3-lg.jpg
-  height: 1000
-  width: 1200
-  mobile:
-    url: https://ik.imagekit.io/garethweaver/south-london-touch-3-sm.jpg
-    height: 540
-    width: 600
+  - url: https://ik.imagekit.io/garethweaver/south-london-touch-1-lg.gif
+    alt:
+    height: 1000
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/south-london-touch-1-sm.gif
+      height: 695
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/south-london-touch-2-lg.gif
+    alt:
+    height: 1000
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/south-london-touch-2-sm.gif
+      height: 600
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/south-london-touch-3-lg.jpg
+    alt:
+    height: 1000
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/south-london-touch-3-sm.jpg
+      height: 540
+      width: 600
 next_page: /stella-mccartney-tumblr
 meta:
   title: Gareth Weaver - South London Touch Rugby

@@ -1,0 +1,96 @@
+@import'../style/base'
+
+.NavBar
+  a
+    text-decoration: none
+    transition: color 0.3s
+
+  +media-up(md)
+    position: fixed
+    left: 0
+    right: 0
+
+    @at-root :global(.index) &:not(.scrolled) a
+      color: white
+
+.inner
+  max-width: calc($max-width + 4em)
+  margin: 0 auto
+  padding: 1em 0
+  z-index: 2
+  position: relative
+  display: grid
+  grid-template-columns: 1fr 24px
+
+  +media-up(md)
+    grid-template-columns: 1fr auto
+
+.home
+  display: flex
+  svg
+    display: block
+    margin-right: 0.5rem
+
+.toggle
+  background: none
+  border: none
+  padding: 0
+  transition: transform 0.2s
+
+  svg
+    display: block
+
+  @at-root .open &
+    transform: rotate(180deg)
+
+  +media-up(md)
+    display: none
+
+.menu
+  a
+    display: block
+
+  +media-down(sm)
+    height: 0
+    overflow: hidden
+    transition: height 0.3s
+
+    a
+      padding: 0.5em 0
+
+    @at-root .open &
+      height: 155px
+
+.menu ul
+  list-style: none
+  margin: 0
+  padding: 1em 0 0
+
+  +media-up(md)
+    padding: 0
+    display: flex
+
+    li
+      margin-left: 0.5em
+
+// scrolled styles
++media-up(md)
+  .background
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 0
+    background: $color-bg
+    z-index: 1
+    transition: height 0.3s
+
+  .inner
+    padding: 3.5em 3.5em 0
+    transition: padding 0.3s
+
+  .scrolled
+    .background
+      height: 3.5em
+    .inner
+      padding: 1em 2em

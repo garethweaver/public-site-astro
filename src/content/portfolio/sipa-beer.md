@@ -3,8 +3,7 @@ slug: sipa-beer
 url: /folio/sipa-beer
 order: 150
 thumb:
-- type: jpg
-  name: sipa.jpg
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: SIPA Beer
 external: false
 type: Label Design
@@ -12,6 +11,7 @@ year: 2020
 tools: Illustrator
 images:
   - url: https://ik.imagekit.io/garethweaver/sipa-lg.jpg
+    alt:
     height: 1200
     width: 1200
     mobile:

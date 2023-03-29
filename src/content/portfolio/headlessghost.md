@@ -3,8 +3,7 @@ slug: headless-ghost
 url: /folio/headless-ghost
 order: 60
 thumb:
-- type: jpg
-  name: headless-ghost.jpg
+  url: //via.placeholder.com/850x620/a9289f/ffffff
 title: Headless Ghost
 external: false
 type: Website Design &amp; Build
@@ -14,6 +13,7 @@ live_site: http://www.headlessghost.com/
 repository: https://github.com/garethweaver/headlessghost
 images:
   - url: https://ik.imagekit.io/garethweaver/headless-ghost-1.jpg
+    alt:
     height: 3438
     width: 1200
 next_page: /dove-concept-adverts

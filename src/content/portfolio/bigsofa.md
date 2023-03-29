@@ -3,8 +3,7 @@ slug: big-sofa
 url: /folio/big-sofa
 order: 80
 thumb:
-- type: jpg
-  name: big-sofa.jpg
+  url: //via.placeholder.com/850x620/a9289f/ffffff
 title: Big Sofa
 external: false
 type: Fulltime Employment
@@ -13,12 +12,15 @@ tools: Photoshop, Haml, Scss, CoffeeScript, AngularJs, Rspec
 live_site: http://www.bigsofa.co.uk/
 images:
   - url: https://ik.imagekit.io/garethweaver/big-sofa-1.jpg
+    alt:
     height: 922
     width: 900
   - url: https://ik.imagekit.io/garethweaver/big-sofa-2.jpg
+    alt:
     height: 854
     width: 900
   - url: https://ik.imagekit.io/garethweaver/big-sofa-3.jpg
+    alt:
     height: 1261
     width: 900
 next_page: /sd-osteopaths

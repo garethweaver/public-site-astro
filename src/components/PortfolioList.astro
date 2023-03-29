@@ -11,7 +11,13 @@ items.sort((a, b) => {
       <a
         rel="prefetch"
         href={`/portfolio/${item.frontmatter.slug}`}>
-        {item.frontmatter.title}
+        <img
+          src={item.frontmatter.thumb?.url}
+          width="425"
+          height="310"
+          loading="lazy"
+          alt=""
+        />
       </a>
     </li>
   ))}
@@ -25,14 +31,20 @@ items.sort((a, b) => {
     margin: 0 auto
     list-style: none
     padding: 0
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    border-radius: 12px
+    border-radius: 0.5em
     overflow: hidden
-    margin-top: 40px
+    margin-top: 2em
+    +media-up(md)
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
 
   a
     display: block
-    padding-top: 66.666%
     background: rgba(black, 0.2)
+    display: block
+
+  img
+    display: block
+    width: 100%
+    height: auto
 </style>

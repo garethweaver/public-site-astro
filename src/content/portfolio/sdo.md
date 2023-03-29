@@ -3,8 +3,7 @@ slug: sd-osteopaths
 url: /folio/sd-osteopaths
 order: 70
 thumb:
-- type: jpg
-  name: sd-osteopaths.jpg
+  url: //via.placeholder.com/850x620/7b35d3/ffffff
 title: St David's Osteopaths
 external: false
 type: Website Design &amp; Build
@@ -12,9 +11,10 @@ year: 2015
 tools: Photoshop, Middleman, Haml, Scss, Anchor CMS
 live_site: http://www.sdosteopaths.co.uk/
 images:
-- url: https://ik.imagekit.io/garethweaver/sd-osteopaths-1.jpg
-  height: 1697
-  width: 900
+  - url: https://ik.imagekit.io/garethweaver/sd-osteopaths-1.jpg
+    alt:
+    height: 1697
+    width: 900
 next_page: /headless-ghost
 meta:
   title: Gareth Weaver - St David's Osteopaths
