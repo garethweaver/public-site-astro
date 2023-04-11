@@ -3,7 +3,7 @@ slug: big-sofa
 url: /folio/big-sofa
 order: 80
 thumb:
-  url: //via.placeholder.com/850x620/a9289f/ffffff
+  url: https://ik.imagekit.io/garethweaver/thumb-big-sofa.jpg
 title: Big Sofa
 external: false
 type: Fulltime Employment

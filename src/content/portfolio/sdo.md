@@ -3,7 +3,7 @@ slug: sd-osteopaths
 url: /folio/sd-osteopaths
 order: 70
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: //via.placeholder.com/800x600/7b35d3/ffffff
 title: St David's Osteopaths
 external: false
 type: Website Design &amp; Build

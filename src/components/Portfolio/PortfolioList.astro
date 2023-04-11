@@ -1,0 +1,50 @@
+---
+const items = await Astro.glob('../../content/portfolio/*.md')
+items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
+---
+
+<nav id="portfolio-anchor">
+  <ul>
+    {items.map(item => (
+      <li class="item">
+        <a
+          rel="prefetch"
+          href={`/portfolio/${item.frontmatter.slug}`}>
+          <img
+            src={item.frontmatter.thumb?.url}
+            width="425"
+            height="310"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style lang="sass">
+  @import'../../style/base'
+
+  ul
+    max-width: $max-width
+    margin: 0 auto
+    list-style: none
+    padding: 0
+    border-radius: 0.5em
+    overflow: hidden
+    margin-top: 2em
+    +media-up(md)
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+
+  a
+    display: block
+    background: rgba(black, 0.2)
+    display: block
+
+  img
+    display: block
+    width: 100%
+    height: auto
+</style>

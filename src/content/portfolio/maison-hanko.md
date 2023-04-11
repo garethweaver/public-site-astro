@@ -3,7 +3,7 @@ slug: maison-hanko
 url: /folio/maison-hanko
 order: 160
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: https://ik.imagekit.io/garethweaver/thumb-maison-hanko.jpg
 title: Maison Hanko
 external: false
 type: Static site

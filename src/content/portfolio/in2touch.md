@@ -3,7 +3,7 @@ slug: in2touch
 url: /folio/in2touch
 order: 170
 thumb:
-  url: //via.placeholder.com/850x620/a9289f/ffffff
+  url: https://ik.imagekit.io/garethweaver/thumb-in2touch.jpg
 title: In2Touch App
 external: false
 type: React Application

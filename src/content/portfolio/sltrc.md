@@ -3,7 +3,7 @@ slug: south-london-touch
 url: /folio/south-london-touch
 order: 100
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: https://ik.imagekit.io/garethweaver/thumb-south-london-touch.jpg
 title: South London Touch Rugby
 external: false
 type: Logo Redesign

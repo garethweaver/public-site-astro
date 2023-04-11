@@ -3,7 +3,7 @@ slug: embedded-media-player
 url: /folio/embedded-media-player
 order: -10
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: //via.placeholder.com/800x600/7b35d3/ffffff
 title: Embedded Media Player
 external: false
 type: Javascript Widget

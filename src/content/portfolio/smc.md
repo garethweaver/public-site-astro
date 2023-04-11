@@ -3,7 +3,7 @@ slug: stella-mccartney-tumblr
 url: /folio/stella-mccartney-tumblr
 order: 90
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: //via.placeholder.com/800x600/7b35d3/ffffff
 title: Stella McCartney Tumblr
 external: false
 type: ES6 Application for Tumblr

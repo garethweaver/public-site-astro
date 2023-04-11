@@ -1,6 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import PortolioDetail from '@components/PortfolioDetail.astro'
+import PortolioDetail from '@components/Portfolio/PortfolioDetail.astro'
 
 export async function getStaticPaths() {
   const items = await Astro.glob('../../content/portfolio/*.md')

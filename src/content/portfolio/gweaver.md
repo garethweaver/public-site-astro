@@ -3,7 +3,7 @@ slug: this-site
 url: /folio/this-site
 order: 0
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: https://ik.imagekit.io/garethweaver/thumb-gareth-weaver.jpg
 title: This Website
 external: false
 type: Static site

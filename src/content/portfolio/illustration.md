@@ -3,7 +3,7 @@ slug: illustration
 url: /folio/illustration
 order: -30
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: //via.placeholder.com/800x600/7b35d3/ffffff
 title: Illustrations
 external: false
 type: For Fun

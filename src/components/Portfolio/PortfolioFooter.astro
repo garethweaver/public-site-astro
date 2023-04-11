@@ -1,0 +1,18 @@
+---
+const { href, next } = Astro.props
+---
+
+<aside>
+  <nav>
+    {href &&
+      <a href={href} target="_blank">
+        Visit
+      </a>
+    }
+    {next &&
+      <a href={`/portfolio${next}`}>
+        Next project
+      </a>
+    }
+  </nav>
+</aside>

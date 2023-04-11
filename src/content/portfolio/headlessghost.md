@@ -3,7 +3,7 @@ slug: headless-ghost
 url: /folio/headless-ghost
 order: 60
 thumb:
-  url: //via.placeholder.com/850x620/a9289f/ffffff
+  url: //via.placeholder.com/800x600/a9289f/ffffff
 title: Headless Ghost
 external: false
 type: Website Design &amp; Build

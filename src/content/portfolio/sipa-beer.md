@@ -3,7 +3,7 @@ slug: sipa-beer
 url: /folio/sipa-beer
 order: 150
 thumb:
-  url: //via.placeholder.com/850x620/7b35d3/ffffff
+  url: //via.placeholder.com/800x600/7b35d3/ffffff
 title: SIPA Beer
 external: false
 type: Label Design
