@@ -1,6 +1,6 @@
 ---
 import 'normalize.css'
-import NavBar from '@components/Navbar/NavBar.jsx'
+import Nav from '@components/Nav/Nav.astro'
 import PortfolioList from '@components/Portfolio/PortfolioList.astro'
 import Footer from '@components/Footer/Footer.astro'
 
@@ -25,7 +25,7 @@ const { title, description } = Astro.props
     <meta name="description" content={description} />
   </head>
   <body>
-    <NavBar client:idle />
+    <Nav />
     <main>
       <slot />
       <PortfolioList />

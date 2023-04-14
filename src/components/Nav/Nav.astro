@@ -1,0 +1,192 @@
+---
+import { menuItems } from '../../data/menu.js'
+import Icon from '@components/Icon/Icon.astro'
+---
+<header data-header-root>
+  <nav>
+    <a
+      aria-label="Go to homepage"
+      class="home"
+      href="/">
+      <Icon use="code" />
+      garethweaver.com
+    </a>
+    <button
+      data-menu-toggle
+      type="button"
+      aria-label="Toggle mobile menu open closed"
+      class="toggle">
+      <Icon use="toggle" />
+    </button>
+    <div class="menu">
+      <ul>
+        {menuItems.map(item => (
+          <li>
+            <a
+              title={item.title}
+              href={item.href}
+              target="_blank">
+              <Icon use={item.icon} />
+              <span>
+                {item.title}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+  <div class="background" />
+</header>
+
+<script>
+  const header = document.querySelector('[data-header-root]')
+  const toggle = document.querySelector('[data-menu-toggle]')
+
+  const handleOnScroll = () => {
+    document.documentElement.scrollTop > 0
+      ? header.classList.add('scrolled')
+      : header.classList.remove('scrolled')
+  }
+
+  const handleClick = () => {
+    header.classList.contains('open')
+      ? header.classList.remove('open')
+      : header.classList.add('open')
+  }
+
+  window.addEventListener('scroll', handleOnScroll)
+  toggle.addEventListener('click', handleClick)
+</script>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  header
+    a
+      text-decoration: none
+      transition: color 0.3s
+      color: white
+
+    +media-up(md)
+      position: fixed
+      left: 0
+      right: 0
+
+      @at-root :global(.index) &:not(.scrolled) a
+        color: white
+
+  nav
+    max-width: calc($max-width + 4em)
+    margin: 0 auto
+    padding: 1em 0
+    z-index: 2
+    position: relative
+    display: grid
+    grid-template-columns: min-content auto min-content
+
+    // +media-up(md)
+    //   grid-template-columns: 1fr auto
+
+  .home
+    display: flex
+    align-items: center
+    transition: color 0.3s
+
+    :global(svg)
+      margin-right: 0.5em
+
+      +media-up(md)
+        margin-right: 0.25em
+
+  .toggle
+    background: none
+    border: none
+    padding: 0
+    transition: transform 0.2s
+    cursor: pointer
+    grid-column-start: 3
+
+    @at-root .open &
+      transform: rotate(90deg)
+
+    +media-up(md)
+      display: none
+
+  .menu
+    grid-column-start: 3
+    a
+      display: block
+      padding: 2px
+
+    span
+      margin-left: 0.5em
+
+    +media-down(sm)
+      height: 0
+      overflow: hidden
+      transition: height 0.3s
+
+      a
+        padding: 0.5em 0
+
+      @at-root .open &
+        height: 180px
+
+    +media-up(md)
+      span
+        display: none
+
+  .menu ul
+    list-style: none
+    margin: 0
+    padding: 1em 0 0
+
+    a
+      display: flex
+      align-items: center
+
+    +media-up(md)
+      padding: 0
+      display: flex
+
+      li
+        margin-left: 0.75em
+
+  a:hover :global(svg)
+    transform: scale(1.15)
+    fill: white
+
+  :global(svg)
+    display: block
+    fill: white
+    transition: all 0.3s
+
+  // scrolled styles
+  +media-up(md)
+    .background
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      height: 0
+      background: $color-bg
+      z-index: 1
+      transition: height 0.3s
+
+    nav
+      padding: 3.5em 3.5em 0
+      transition: padding 0.3s
+
+    :global(.scrolled)
+      .background
+        height: 3.5em
+      nav
+        padding: 1em 2em
+      :global(svg)
+        fill: #bfb3d2
+      a
+        color: #bfb3d2
+        &:hover
+          color: white
+</style>
