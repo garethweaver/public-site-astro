@@ -11,8 +11,24 @@ const { href, next } = Astro.props
     }
     {next &&
       <a href={`/portfolio${next}`}>
-        Next project
+        Next
       </a>
     }
   </nav>
 </aside>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  nav
+    margin: 1em 0 2em
+
+    +media-up(md)
+      display: flex
+      justify-content: center
+
+  a
+    display: block
+    padding: 1rem
+    text-align: center
+</style>

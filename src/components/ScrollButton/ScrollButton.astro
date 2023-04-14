@@ -1,0 +1,13 @@
+<a href="#portfolio-anchor">
+  View portfolio
+</a>
+
+<script>
+  const anchor = document.querySelector(`a[href="#portfolio-anchor"]`)
+  anchor.addEventListener('click', e => {
+    e.preventDefault()
+    const selector = e.target.getAttribute('href')
+    document.querySelector(selector)
+      .scrollIntoView({ block: 'start', behavior: 'smooth' })
+  })
+</script>

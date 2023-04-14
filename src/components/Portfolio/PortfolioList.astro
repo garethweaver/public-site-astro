@@ -3,7 +3,7 @@ const items = await Astro.glob('../../content/portfolio/*.md')
 items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
 ---
 
-<nav id="portfolio-anchor">
+<nav>
   <ul>
     {items.map(item => (
       <li class="item">
@@ -12,8 +12,8 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
           href={`/portfolio/${item.frontmatter.slug}`}>
           <img
             src={item.frontmatter.thumb?.url}
-            width="425"
-            height="310"
+            width="800"
+            height="600"
             loading="lazy"
             alt=""
           />
@@ -24,7 +24,7 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
 </nav>
 
 <style lang="sass">
-  @import'../../style/base'
+  @import '../../style/base'
 
   ul
     max-width: $max-width

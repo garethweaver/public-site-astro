@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { menuItems } from '../../data/menu.js'
-import Icon from '../Icon/Icon.jsx'
+import Icon from '@components/Icon/Icon.jsx'
 import styles from './NavBar.module.sass'
 
 export default () => {
