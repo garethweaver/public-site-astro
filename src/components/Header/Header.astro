@@ -1,12 +1,12 @@
 ---
-import { menuItems } from '../../data/menu.js'
 import Icon from '@components/Icon/Icon.astro'
+import Menu from '@components/Menu/Menu.astro'
 ---
 <header data-header-root>
   <nav>
     <a
       aria-label="Go to homepage"
-      class="home"
+      class="home link"
       href="/">
       <Icon use="code" />
       garethweaver.com
@@ -19,21 +19,7 @@ import Icon from '@components/Icon/Icon.astro'
       <Icon use="toggle" />
     </button>
     <div class="menu">
-      <ul>
-        {menuItems.map(item => (
-          <li>
-            <a
-              title={item.title}
-              href={item.href}
-              target="_blank">
-              <Icon use={item.icon} />
-              <span>
-                {item.title}
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <Menu />
     </div>
   </nav>
   <div class="background" />
@@ -62,19 +48,11 @@ import Icon from '@components/Icon/Icon.astro'
 <style lang="sass">
   @import '../../style/base'
 
-  header
-    a
-      text-decoration: none
-      transition: color 0.3s
-      color: white
-
-    +media-up(md)
+  +media-up(md)
+    header
       position: fixed
       left: 0
       right: 0
-
-      @at-root :global(.index) &:not(.scrolled) a
-        color: white
 
   nav
     max-width: calc($max-width + 4em)
@@ -85,17 +63,19 @@ import Icon from '@components/Icon/Icon.astro'
     display: grid
     grid-template-columns: min-content auto min-content
 
-    // +media-up(md)
-    //   grid-template-columns: 1fr auto
-
   .home
     display: flex
     align-items: center
     transition: color 0.3s
+    text-decoration: none
+    color: white
+
+    // don't scale too much
+    +media-down(lg)
+      font-size: 1.1rem
 
     :global(svg)
       margin-right: 0.5em
-
       +media-up(md)
         margin-right: 0.25em
 
@@ -107,53 +87,21 @@ import Icon from '@components/Icon/Icon.astro'
     cursor: pointer
     grid-column-start: 3
 
-    @at-root .open &
-      transform: rotate(90deg)
-
     +media-up(md)
       display: none
 
   .menu
     grid-column-start: 3
-    a
-      display: block
-      padding: 2px
-
-    span
-      margin-left: 0.5em
-
     +media-down(sm)
+      grid-column: span 3
       height: 0
       overflow: hidden
       transition: height 0.3s
 
-      a
-        padding: 0.5em 0
-
       @at-root .open &
         height: 180px
 
-    +media-up(md)
-      span
-        display: none
-
-  .menu ul
-    list-style: none
-    margin: 0
-    padding: 1em 0 0
-
-    a
-      display: flex
-      align-items: center
-
-    +media-up(md)
-      padding: 0
-      display: flex
-
-      li
-        margin-left: 0.75em
-
-  a:hover :global(svg)
+  :global(.link:hover svg)
     transform: scale(1.15)
     fill: white
 
@@ -180,12 +128,12 @@ import Icon from '@components/Icon/Icon.astro'
 
     :global(.scrolled)
       .background
-        height: 3.5em
+        height: 70px
       nav
         padding: 1em 2em
       :global(svg)
         fill: #bfb3d2
-      a
+      :global(.link)
         color: #bfb3d2
         &:hover
           color: white

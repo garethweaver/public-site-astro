@@ -5,13 +5,16 @@ import { menuItems } from '../../data/menu.js'
 <footer>
   <nav>
     <ul>
-      {menuItems.map(item => (
-        <li>
-          <a href={item.href} target="_blank">
-            {item.title}
-          </a>
-        </li>
-      ))}
+      {menuItems.map(item => {
+        const Tag = item.type || 'a'
+        return (
+          <li>
+            <Tag {...item.props}>
+              {item.title}
+            </Tag>
+          </li>
+        )
+      })}
       <li>&copy; Gareth Weaver {new Date().getFullYear()}</li>
     </ul>
   </nav>
@@ -42,4 +45,11 @@ import { menuItems } from '../../data/menu.js'
     +media-up(md)
       font-size: 0.8em
       margin: 0 1em
+
+  button
+    background: none
+    border: none
+    color: $color-href
+    text-decoration: underline
+    cursor: pointer
 </style>

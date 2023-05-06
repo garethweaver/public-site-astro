@@ -39,4 +39,10 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
     font-family: $font-family-body
     font-size: 1em
     font-weight: 400
+
+  // offset for fixed desktop nav
+  #portfolio-anchor
+    +media-up(md)
+      position: relative
+      top: -26px
 </style>

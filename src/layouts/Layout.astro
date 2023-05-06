@@ -1,7 +1,8 @@
 ---
 import 'normalize.css'
-import Nav from '@components/Nav/Nav.astro'
+import Header from '@components/Header/Header.astro'
 import PortfolioList from '@components/Portfolio/PortfolioList.astro'
+import Modal from '@components/Modal/Modal.astro'
 import Footer from '@components/Footer/Footer.astro'
 
 export interface Props {
@@ -25,12 +26,13 @@ const { title, description } = Astro.props
     <meta name="description" content={description} />
   </head>
   <body>
-    <Nav />
+    <Header />
     <main>
       <slot />
       <PortfolioList />
     </main>
     <Footer />
+    <Modal />
   </body>
 </html>
 
@@ -42,9 +44,7 @@ const { title, description } = Astro.props
     box-sizing: border-box
 
   html
-    font-size: 16px
-    +media-up(md)
-      font-size: 18px
+    font-size: 18px
     +media-up(lg)
       font-size: 22px
 

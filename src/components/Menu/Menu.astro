@@ -1,0 +1,60 @@
+---
+import { menuItems } from '../../data/menu.js'
+import Icon from '@components/Icon/Icon.astro'
+---
+
+<ul>
+  {menuItems.map(item => {
+    const Tag = item.type || 'a'
+    return (
+      <li>
+        <Tag
+          className="link"
+          title={item.title}
+          {...item.props}
+          >
+          <Icon use={item.icon} />
+          <span>
+            {item.title}
+          </span>
+        </Tag>
+      </li>
+    )
+  })}
+</ul>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 1em 0 0
+    +media-up(md)
+      padding: 0
+      display: flex
+
+  li
+    +media-up(md)
+      margin-left: 0.75em
+
+  .link
+    text-decoration: none
+    transition: color 0.3s
+    color: white
+    display: flex
+    align-items: center
+    +media-down(sm)
+      padding: 0.5em 0
+      width: 100%
+
+  span
+    margin-left: 0.5em
+    +media-up(md)
+      display: none
+
+  button
+    background: none
+    border: none
+    cursor: pointer
+</style>

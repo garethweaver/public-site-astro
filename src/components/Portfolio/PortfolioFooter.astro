@@ -1,5 +1,5 @@
 ---
-const { href, next } = Astro.props
+const { href, repository, next } = Astro.props
 ---
 
 <aside>
@@ -7,6 +7,11 @@ const { href, next } = Astro.props
     {href &&
       <a href={href} target="_blank">
         Visit
+      </a>
+    }
+    {repository &&
+      <a href={repository} target="_blank">
+        Github
       </a>
     }
     {next &&

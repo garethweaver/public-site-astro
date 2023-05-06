@@ -7,7 +7,7 @@
 import PortfolioFooter from './PortfolioFooter.astro'
 import PortfolioInfo from './PortfolioInfo.astro'
 import PortfolioImages from './PortfolioImages.astro'
-const { title, body, type, tools, year, images, live_site, next_page } = Astro.props
+const { title, body, type, tools, year, images, live_site, repository, next_page } = Astro.props
 ---
 
 <article class="PortfolioDetail">
@@ -16,7 +16,7 @@ const { title, body, type, tools, year, images, live_site, next_page } = Astro.p
     <PortfolioInfo info={[type, tools, year]} />
     <div class="body" set:html={body} />
     <PortfolioImages images={images} />
-    <PortfolioFooter href={live_site} next={next_page} />
+    <PortfolioFooter href={live_site} next={next_page} repository={repository} />
   </div>
 </article>
 

@@ -1,20 +1,32 @@
 export const menuItems = [{
   title: 'Github',
-  href: 'https://github.com/garethweaver',
   icon: 'github',
+  props: {
+    target: '_blank',
+    href: 'https://github.com/garethweaver',
+  },
 },
 {
   title: 'Codepen',
-  href: 'https://codepen.io/garethdweaver',
   icon: 'codepen',
+  props: {
+    target: '_blank',
+    href: 'https://codepen.io/garethdweaver',
+  },
 },
 {
   title: 'Twitter',
-  href: '/',
   icon: 'twitter',
+  type: 'button',
+  props: {
+    id: "open-twitter-modal"
+  },
 },
 {
   title: 'CV.pdf',
-  href: 'https://www.garethweaver.com/GarethWeaverCV.pdf',
   icon: 'pdf',
+  props: {
+    target: '_blank',
+    href: 'https://www.garethweaver.com/GarethWeaverCV.pdf',
+  },
 }]
