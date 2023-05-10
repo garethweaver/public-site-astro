@@ -1,5 +1,6 @@
 ---
 import 'normalize.css'
+import Footer from '@components/Fonts/Fonts.astro'
 import Header from '@components/Header/Header.astro'
 import PortfolioList from '@components/Portfolio/PortfolioList.astro'
 import Modal from '@components/Modal/Modal.jsx'
@@ -24,9 +25,7 @@ const { title, description } = Astro.props
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <Fonts />
   </head>
   <body>
     <Header />
