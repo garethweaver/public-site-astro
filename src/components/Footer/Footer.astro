@@ -1,20 +1,23 @@
 ---
 import { menuItems } from '../../data/menu.js'
+import GitButton from '@components/GitButton/GitButton.jsx'
 ---
 
 <footer>
   <nav>
     <ul>
-      {menuItems.map(item => {
-        const Tag = item.type || 'a'
-        return (
-          <li>
-            <Tag {...item.props}>
-              {item.title}
-            </Tag>
-          </li>
-        )
-      })}
+      <li>
+        <GitButton client:visible>
+          Github
+        </GitButton>
+      </li>
+      {menuItems.map(item => (
+        <li>
+          <a {...item.props}>
+            {item.title}
+          </a>
+        </li>
+      ))}
       <li>&copy; Gareth Weaver {new Date().getFullYear()}</li>
     </ul>
   </nav>
@@ -27,6 +30,7 @@ import { menuItems } from '../../data/menu.js'
     max-width: $max-width
     margin: 0 auto
     padding: 3em 0 6em
+    font-family: $font-family-heading
     +media-up(md)
       padding: 4em 0 7em
 
@@ -46,10 +50,7 @@ import { menuItems } from '../../data/menu.js'
       font-size: 0.8em
       margin: 0 1em
 
-  button
-    background: none
-    border: none
-    color: $color-href
-    text-decoration: underline
-    cursor: pointer
+    :global(button)
+      font-family: $font-family-heading
+      color: $color-href
 </style>

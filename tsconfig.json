@@ -8,6 +8,9 @@
       ],
       "@layouts/*": [
         "src/layouts/*"
+      ],
+      "@stores/*": [
+        "src/stores/*"
       ]
     },
     "jsx": "react-jsx",

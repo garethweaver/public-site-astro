@@ -27,13 +27,23 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
   .intro
     max-width: $max-width
     margin: 0 auto
-    background: linear-gradient(135deg, $color-grad-primary 0%, $color-grad-secondary 100%)
+    background: $gradient
     min-height: 85vh
     border-radius: 0.5em
 
   .inner
-    max-width: 600px
-    padding: 5em
+    // max-width: 600px
+    max-width: 440px
+    padding: 2rem
+    line-height: 1.2
+    // padding: 5em
+    +media-up(md)
+      padding: 5rem 2rem 0
+    +media-up(lg)
+      margin-left: 10vw
+      padding-top: 15vh
+      // margin-top: 10vw
+      // padding: 5rem 2rem 0 6rem
 
   h2
     font-family: $font-family-body

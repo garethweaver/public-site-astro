@@ -1,26 +1,32 @@
 ---
 import { menuItems } from '../../data/menu.js'
 import Icon from '@components/Icon/Icon.astro'
+import GitButton from '@components/GitButton/GitButton.jsx'
 ---
 
 <ul>
-  {menuItems.map(item => {
-    const Tag = item.type || 'a'
-    return (
-      <li>
-        <Tag
-          className="link"
-          title={item.title}
-          {...item.props}
-          >
-          <Icon use={item.icon} />
-          <span>
-            {item.title}
-          </span>
-        </Tag>
-      </li>
-    )
-  })}
+  <li>
+    <GitButton
+      client:idle
+      className="link">
+      <Icon use="github" />
+      <span>Github</span>
+    </GitButton>
+  </li>
+  {menuItems.map(item => (
+    <li>
+      <a
+        class="link"
+        title={item.title}
+        {...item.props}
+        >
+        <Icon use={item.icon} />
+        <span>
+          {item.title}
+        </span>
+      </Tag>
+    </a>
+  ))}
 </ul>
 
 <style lang="sass">
@@ -34,27 +40,21 @@ import Icon from '@components/Icon/Icon.astro'
       padding: 0
       display: flex
 
-  li
-    +media-up(md)
-      margin-left: 0.75em
+    li
+      +media-up(md)
+        margin-left: 0.75em
 
-  .link
-    text-decoration: none
-    transition: color 0.3s
-    color: white
-    display: flex
-    align-items: center
-    +media-down(sm)
-      padding: 0.5em 0
-      width: 100%
+    :global(.link)
+      transition: color 0.3s
+      color: white
+      display: flex
+      align-items: center
+      +media-down(sm)
+        padding: 0.5em 0
+        width: 100%
 
-  span
-    margin-left: 0.5em
-    +media-up(md)
-      display: none
-
-  button
-    background: none
-    border: none
-    cursor: pointer
+    :global(span)
+      margin-left: 0.5em
+      +media-up(md)
+        display: none
 </style>

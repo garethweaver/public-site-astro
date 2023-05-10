@@ -63,11 +63,19 @@ import Menu from '@components/Menu/Menu.astro'
     display: grid
     grid-template-columns: min-content auto min-content
 
+    :global(.link:hover svg)
+      transform: scale(1.15)
+      fill: white
+
+    :global(svg)
+      display: block
+      fill: white
+      transition: all 0.3s
+
   .home
     display: flex
     align-items: center
     transition: color 0.3s
-    text-decoration: none
     color: white
 
     // don't scale too much
@@ -100,15 +108,6 @@ import Menu from '@components/Menu/Menu.astro'
 
       @at-root .open &
         height: 180px
-
-  :global(.link:hover svg)
-    transform: scale(1.15)
-    fill: white
-
-  :global(svg)
-    display: block
-    fill: white
-    transition: all 0.3s
 
   // scrolled styles
   +media-up(md)
