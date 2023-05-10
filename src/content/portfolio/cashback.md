@@ -3,7 +3,7 @@ slug: cashbackcard
 url: /folio/cashbackcard
 order: -35
 thumb:
-  url: //via.placeholder.com/800x600/a9289f/ffffff
+  url: https://ik.imagekit.io/garethweaver/a9289f.png
 title: CashbackCard.com
 external: false
 type: Website Design

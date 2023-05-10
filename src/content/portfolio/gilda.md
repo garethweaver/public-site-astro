@@ -3,7 +3,7 @@ slug: gilda
 url: /folio/gilda
 order: 140
 thumb:
-  url: //via.placeholder.com/800x600/a9289f/ffffff
+  url: https://ik.imagekit.io/garethweaver/a9289f.png
 title: GILDA, Nexus Studios
 external: false
 type: Static Page

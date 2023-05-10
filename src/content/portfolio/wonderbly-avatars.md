@@ -3,7 +3,7 @@ slug: wonderbly-avatars
 url: /folio/wonderbly-avatars
 order: 180
 thumb:
-  url: //via.placeholder.com/800x600/7b35d3/ffffff
+  url: https://ik.imagekit.io/garethweaver/7b35d3.png
 title: Wonderbly Avatars
 external: false
 type: React Component

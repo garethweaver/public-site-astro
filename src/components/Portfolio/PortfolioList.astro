@@ -5,7 +5,7 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
 
 <nav>
   <ul>
-    {items.map(item => (
+    {items.map((item, idx) => (
       <li class="item">
         <a
           rel="prefetch"
@@ -14,7 +14,7 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
             src={item.frontmatter.thumb?.url}
             width="800"
             height="600"
-            loading="lazy"
+            loading={idx > 0 ? 'lazy' : 'eager'}
             alt={item.frontmatter.title}
           />
         </a>

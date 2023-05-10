@@ -3,7 +3,7 @@ slug: illustration
 url: /folio/illustration
 order: -30
 thumb:
-  url: //via.placeholder.com/800x600/7b35d3/ffffff
+  url: https://ik.imagekit.io/garethweaver/7b35d3.png
 title: Illustrations
 external: false
 type: For Fun

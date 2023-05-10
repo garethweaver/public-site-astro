@@ -3,7 +3,7 @@ slug: headless-ghost
 url: /folio/headless-ghost
 order: 60
 thumb:
-  url: //via.placeholder.com/800x600/a9289f/ffffff
+  url: https://ik.imagekit.io/garethweaver/a9289f.png
 title: Headless Ghost
 external: false
 type: Website Design &amp; Build

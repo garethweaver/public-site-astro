@@ -3,7 +3,7 @@ slug: dove-concept-adverts
 url: /folio/dove-concept-adverts
 order: 50
 thumb:
-  url: //via.placeholder.com/800x600/a9289f/ffffff
+  url: https://ik.imagekit.io/garethweaver/a9289f.png
 title: Dove Concept Advert Repository
 external: false
 type: Angular Web Application
