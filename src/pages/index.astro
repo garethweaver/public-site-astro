@@ -11,7 +11,7 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
       <h1>
         PWAs &amp;<br />Engineering
       </h1>
-      <h2>
+      <h2 class="subtitle">
         Let’s talk about websites, webapps, rugby or just the weather.
         I’m a frontend developer and I live in London, UK.
       </h2>
@@ -35,7 +35,6 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
     // max-width: 600px
     max-width: 440px
     padding: 2rem
-    line-height: 1.2
     // padding: 5em
     +media-up(md)
       padding: 5rem 2rem 0
@@ -45,10 +44,12 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
       // margin-top: 10vw
       // padding: 5rem 2rem 0 6rem
 
-  h2
+  .subtitle
+    line-height: 1.3
     font-family: $font-family-body
     font-size: 1em
     font-weight: 400
+    margin-bottom: 1.2em
 
   // offset for fixed desktop nav
   #portfolio-anchor

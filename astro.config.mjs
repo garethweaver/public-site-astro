@@ -5,11 +5,11 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: 'static',
   adapter: vercelStatic(),
   integrations: [
     prefetch({
-      throttle: 3
+      throttle: 3,
     }),
     react(),
   ]
