@@ -17,6 +17,7 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
       </h2>
       <ScrollButton />
     </div>
+    <div class="layer" />
   </div>
   <div id="portfolio-anchor" />
 </Layout>
@@ -30,19 +31,17 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
     background: $gradient
     min-height: 85vh
     border-radius: 0.5em
+    position: relative
+    overflow: hidden
 
   .inner
-    // max-width: 600px
     max-width: 440px
     padding: 2rem
-    // padding: 5em
     +media-up(md)
       padding: 5rem 2rem 0
     +media-up(lg)
       margin-left: 10vw
       padding-top: 15vh
-      // margin-top: 10vw
-      // padding: 5rem 2rem 0 6rem
 
   .subtitle
     line-height: 1.3
@@ -50,6 +49,22 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
     font-size: 1em
     font-weight: 400
     margin-bottom: 1.2em
+
+  .layer
+    position: absolute
+    top: 85%
+    left: -200px
+    right: -200px
+    transform: rotate(-15deg)
+    height: 50%
+
+    &:before
+      content: ''
+      background: rgba(black, 0.3)
+      position: absolute
+      height: 100%
+      width: 100%
+      mix-blend-mode: overlay
 
   // offset for fixed desktop nav
   #portfolio-anchor
