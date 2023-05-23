@@ -37,7 +37,7 @@ export default () => {
         {userData
           ? <ModalContent userData={userData} />
           : (
-            <div class={styles.loader}>
+            <div className={styles.loader}>
               <svg height="24" width="24">
                 <use href={`/icons/github.svg#icon`} />
               </svg>
