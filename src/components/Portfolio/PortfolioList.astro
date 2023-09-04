@@ -19,10 +19,10 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
             rel="nofollow"
             href={item.frontmatter.url}>
             <img
-              src={`${item.frontmatter.thumb?.url}?tr=w-400`}
-              srcset={`${item.frontmatter.thumb?.url}?tr=w-400 1x, ${item.frontmatter.thumb?.url} 2x`}
-              width="400"
-              height="300"
+              src={`${item.frontmatter.thumb?.url}?tr=w-390`}
+              srcset={`${item.frontmatter.thumb?.url}?tr=w-390 1x, ${item.frontmatter.thumb?.url} 2x`}
+              width="390"
+              height="292.5"
               loading={idx > 0 ? 'lazy' : 'eager'}
               alt={item.frontmatter.title}
             />
@@ -32,10 +32,10 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
             rel="prefetch"
             href={`/portfolio/${item.frontmatter.slug}`}>
             <img
-              src={`${item.frontmatter.thumb?.url}?tr=w-400`}
-              srcset={`${item.frontmatter.thumb?.url}?tr=w-400 1x, ${item.frontmatter.thumb?.url} 2x`}
-              width="400"
-              height="300"
+              src={`${item.frontmatter.thumb?.url}?tr=w-390`}
+              srcset={`${item.frontmatter.thumb?.url}?tr=w-390 1x, ${item.frontmatter.thumb?.url} 2x`}
+              width="390"
+              height="292.5"
               loading={idx > 0 ? 'lazy' : 'eager'}
               alt={item.frontmatter.title}
             />
