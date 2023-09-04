@@ -1,4 +1,3 @@
-import { useStore } from '@nanostores/react'
 import { isModalOpen } from '@stores/modalStore'
 
 import styles from './GitButton.module.sass'
