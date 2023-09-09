@@ -1,9 +1,13 @@
 ---
 import Icon from '@components/Icon/Icon.astro'
 import Menu from '@components/Menu/Menu.astro'
-const { lockedHeader } = Astro.props
+const { lockedHeader = false } = Astro.props
+
+export interface Props {
+  lockedHeader: boolean | undefined,
+}
 ---
-<header data-header-root class={lockedHeader && 'scrolled'}>
+<header data-header-root class={lockedHeader ? 'scrolled' : ''}>
   <nav>
     <a
       aria-label="Go to homepage"

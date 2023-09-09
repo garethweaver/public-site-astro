@@ -1,13 +1,28 @@
 ---
-// export interface Props {
-//  title: string
-//  body: string
-//  foo: string
-// }
 import PortfolioFooter from './PortfolioFooter.astro'
 import PortfolioInfo from './PortfolioInfo.astro'
-import PortfolioImages from './PortfolioImages.astro'
+import PortfolioImages, { type PortfolioImage } from './PortfolioImages.astro'
 const { title, body, type, tools, year, images, live_site, repository, next_page } = Astro.props
+
+export interface Props {
+  title: string,
+  body: string,
+  type: string,
+  tools: string,
+  year: string,
+  images: PortfolioImage[],
+  live_site?: string,
+  repository?: string,
+  next_page: string,
+  order: number,
+  thumb: {
+    url: string,
+    gradient?: number,
+  }
+  external: boolean,
+  url: string,
+  slug: string,
+}
 ---
 
 <article class="PortfolioDetail">

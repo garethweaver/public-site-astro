@@ -3,12 +3,12 @@
 </a>
 
 <script>
-  const anchor = document.querySelector(`a[href="#portfolio-anchor"]`)
-  anchor.addEventListener('click', e => {
+  const anchor = document.querySelector<HTMLAnchorElement>(`a[href="#portfolio-anchor"]`)!
+  anchor.addEventListener('click', (e: Event) => {
     e.preventDefault()
-    const selector = e.target.getAttribute('href')
+    const selector = (e.target as HTMLAnchorElement).getAttribute('href')!
     document.querySelector(selector)
-      .scrollIntoView({ block: 'start', behavior: 'smooth' })
+      ?.scrollIntoView({ block: 'start', behavior: 'smooth' })
   })
 </script>
 

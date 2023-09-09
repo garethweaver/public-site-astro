@@ -1,6 +1,14 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import PortolioDetail from '@components/Portfolio/PortfolioDetail.astro'
+import PortolioDetail, { type Props as PortfolioItem } from '@components/Portfolio/PortfolioDetail.astro'
+
+export interface Props extends PortfolioItem {
+  meta: {
+    title: string,
+    description: string,
+  }
+  lockedHeader?: boolean,
+}
 
 export async function getStaticPaths() {
   const items = await Astro.glob('../../content/portfolio/*.md')

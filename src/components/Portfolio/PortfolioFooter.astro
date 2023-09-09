@@ -1,5 +1,11 @@
 ---
 const { href, repository, next } = Astro.props
+
+export interface Props {
+  href?: string,
+  repository?: string,
+  next: string,
+}
 ---
 
 <aside>

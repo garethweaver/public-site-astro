@@ -1,5 +1,12 @@
 ---
-const items = await Astro.glob('../../content/portfolio/*.md')
+import type { Props as PortfolioItemFrontmatter } from './PortfolioDetail.astro'
+
+export interface PortfolioItem {
+  frontmatter: PortfolioItemFrontmatter,
+  body?: string,
+}
+
+const items: PortfolioItem[] = await Astro.glob('../../content/portfolio/*.md')
 items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
 ---
 
@@ -8,11 +15,11 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
     {items.map((item, idx) => (
       <li
         class="item"
-        style={item.frontmatter.thumb.gradient && {
+        style={item.frontmatter.thumb.gradient ? {
           background: `linear-gradient(${
             item.frontmatter.thumb.gradient
           }deg, var(--color-grad-primary-sm), var(--color-grad-secondary-sm));`
-        }}>
+        } : {}}>
         {item.frontmatter.external ? (
           <a
             target="_blank"

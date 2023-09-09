@@ -1,5 +1,21 @@
 ---
 const { images } = Astro.props
+
+interface Image {
+  url: string,
+  height: number,
+  width: number,
+}
+
+export interface PortfolioImage extends Image {
+  url: string,
+  alt?: string,
+  mobile?: Image,
+}
+
+export interface Props {
+  images: PortfolioImage[],
+}
 ---
 
 <>

@@ -1,4 +1,13 @@
-export const menuItems = [
+interface MenuItem {
+  title: string,
+  icon: string,
+  props: {
+    target: string,
+    href: string,
+  }
+}
+
+export const menuItems: MenuItem[] = [
   {
     title: 'Codepen',
     icon: 'codepen',
@@ -22,5 +31,5 @@ export const menuItems = [
       target: '_blank',
       href: '/GarethWeaverCV.pdf',
     },
-}
+  }
 ]
