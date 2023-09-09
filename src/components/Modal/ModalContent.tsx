@@ -1,6 +1,7 @@
 import styles from './Modal.module.sass'
+import type { UserData } from './Modal.types.js'
 
-export default ({ userData }) => (
+export default ({ userData }: { userData: UserData }) => (
   <>
     <div className={styles.bio}>
       <a
@@ -15,7 +16,7 @@ export default ({ userData }) => (
           alt={`${userData.name} github profile avatar`} />
           <h2 className={styles.name}>@{userData.login}</h2>
         </a>
-        <p>{Math.floor((Date.parse(new Date()) - Date.parse(new Date(userData.createdAt))) / 86400000)} days on Github</p>
+        <p>{Math.floor((Date.parse(new Date().toString()) - Date.parse(new Date(userData.createdAt).toString())) / 86400000)} days on Github</p>
         <p>{userData.repositories.totalCount} public repositories</p>
         <p>{userData.repositories.totalDiskUsage} bytes of code</p>
     </div>

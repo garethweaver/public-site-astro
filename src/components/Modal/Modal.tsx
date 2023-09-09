@@ -2,18 +2,25 @@ import { useEffect, useState } from 'react'
 import { useStore } from '@nanostores/react'
 import { isModalOpen } from '@stores/modalStore'
 import ModalContent from './ModalContent.jsx'
+import type { UserData } from './Modal.types.js'
 import styles from './Modal.module.sass'
 
-export default () => {
-  const $isModalOpen = useStore(isModalOpen)
-  const [userData, setUserData] = useState(null)
+interface ApiResponse {
+  data: {
+    user: UserData
+  }
+}
 
-  useEffect(() => {
+export default () => {
+  const $isModalOpen: boolean = useStore(isModalOpen)
+  const [userData, setUserData] = useState<UserData | null>(null)
+
+  useEffect((): void => {
     if ($isModalOpen) {
       document.body.classList.add('no-scroll')
       const fetchData = async () => {
         const response = await fetch('https://git-profile-info.vercel.app')
-        const json = await response.json()
+        const json: ApiResponse = await response.json()
         setUserData(json?.data?.user)
       }
       fetchData().catch(console.error)
