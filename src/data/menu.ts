@@ -1,9 +1,9 @@
 interface MenuItem {
-  title: string,
-  icon: string,
+  title: string
+  icon: string
   props: {
-    target: string,
-    href: string,
+    target: string
+    href: string
   }
 }
 

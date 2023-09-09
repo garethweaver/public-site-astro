@@ -2,8 +2,8 @@
 import type { Props as PortfolioItemFrontmatter } from './PortfolioDetail.astro'
 
 export interface PortfolioItem {
-  frontmatter: PortfolioItemFrontmatter,
-  body?: string,
+  frontmatter: PortfolioItemFrontmatter
+  body?: string
 }
 
 const items: PortfolioItem[] = await Astro.glob('../../content/portfolio/*.md')

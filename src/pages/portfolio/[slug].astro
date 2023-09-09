@@ -4,10 +4,10 @@ import PortolioDetail, { type Props as PortfolioItem } from '@components/Portfol
 
 export interface Props extends PortfolioItem {
   meta: {
-    title: string,
-    description: string,
+    title: string
+    description: string
   }
-  lockedHeader?: boolean,
+  lockedHeader?: boolean
 }
 
 export async function getStaticPaths() {
