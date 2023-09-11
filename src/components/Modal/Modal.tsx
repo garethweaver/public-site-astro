@@ -5,7 +5,7 @@ import ModalContent from './ModalContent.jsx'
 import type { UserData } from './Modal.types.js'
 import styles from './Modal.module.sass'
 
-interface ApiResponse {
+interface GitProfileApiResponse {
   data: {
     user: UserData
   }
@@ -20,7 +20,7 @@ export default () => {
       document.body.classList.add('no-scroll')
       const fetchData = async () => {
         const response = await fetch('https://git-profile-info.vercel.app')
-        const json: ApiResponse = await response.json()
+        const json: GitProfileApiResponse = await response.json()
         setUserData(json?.data?.user)
       }
       fetchData().catch(console.error)
