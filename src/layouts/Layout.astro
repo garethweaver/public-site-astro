@@ -3,7 +3,7 @@ import 'normalize.css'
 import Fonts from '@components/Fonts/Fonts.astro'
 import Header from '@components/Header/Header.astro'
 import PortfolioList from '@components/Portfolio/PortfolioList.astro'
-import Modal from '@components/Modal/Modal.jsx'
+import Modal from '../components/Modal/Modal'
 import Footer from '@components/Footer/Footer.astro'
 
 export interface Props {
@@ -65,6 +65,7 @@ const { href } = Astro.url
     --gradient: linear-gradient(135deg, var(--color-grad-primary) 0%, var(--color-grad-secondary) 100%)
     --rgb-white: 255, 255, 255
     --rgb-black: 0, 0, 0
+    --color-modal-highlight: #ffbfda
 
   *
     box-sizing: border-box

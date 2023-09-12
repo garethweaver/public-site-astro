@@ -1,5 +1,5 @@
 import styles from './Modal.module.sass'
-import type { UserData } from './Modal.types.js'
+import type { UserData } from './Modal.types'
 
 export default ({ userData }: { userData: UserData }) => (
   <>
