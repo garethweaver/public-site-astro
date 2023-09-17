@@ -7,9 +7,9 @@ thumb:
 title: This Website
 external: false
 type: Static site
-year: 2018
-tools: Photoshop, GatsbyJs, React, Sass
-repository: https://github.com/garethweaver/public-site-react
+year: 2023-2016
+tools: AstroJs, React, Typescript, Sass, [GatsbyJs, AngularJs]
+repository: https://github.com/garethweaver/public-site-astro
 images:
   - url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-lg.jpg
     alt:
@@ -21,12 +21,21 @@ images:
       width: 600
 next_page: /embedded-media-player
 meta:
-  title: Gareth Weaver - I built this with Gatsby and React
-  description: I rebuilt my personal website in React using GatsbyJs and learnt
-    a lot along the way.
+  title: Gareth Weaver - I built this with AstroJs and React
+  description: I rebuilt my personal website in React using AstroJs and learnt
+    a lot along the way. Previously it was built in both GatsbyJs and AngularJs.
 ---
-I decided to rebuild my personal site in React using GatsbyJs. Originally
-the site was built in Angular and compiled with Middleman but I thought it was
-about time I updated the framework and learnt something new. I also made some
-minor design tweaks, you can find the repo <a href="https://github.com/garethweaver/public-site-react"
-target="_blank" rel="noopener noreferrer">on github</a>.</p>
+My portfolio is built with <a href="https://astro.build/" target="_blank"
+rel="noopener noreferrer">AstroJs</a>. I first put my portfolio site together in
+2016 using Angular@1.3.0 and Middleman. since then I've rebuilt it with GatsbyJs in
+2018 and again in 2023 with a design facelift.
+
+I'm a big fan of AstroJs' island architecture and the control one has over
+delayed hydration on the client. At the time of writing this no other framework is
+offering such great control over how much javascript is shipped to the client.
+
+You can find all the repositories here:
+
+* <a href="https://github.com/garethweaver/public-site-astro" target="_blank" rel="noopener noreferrer">AstroJs, React \[2023\]</a>
+* <a href="https://github.com/garethweaver/public-site-gatsby" target="_blank" rel="noopener noreferrer">GatsbyJs@2.0.0 - GatsbyJs@4.0.0 \[2018\]</a>
+* <a href="https://github.com/garethweaver/public-site-angular" target="_blank" rel="noopener noreferrer">Angular@1.3, Middleman \[2016\]</a>
