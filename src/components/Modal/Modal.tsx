@@ -16,7 +16,7 @@ export default () => {
   const [userData, setUserData] = useState<UserData | null>(null)
   const dialog = useRef<HTMLDialogElement>(null)
 
-  const closeFromKeyDown = (e) => {
+  const closeFromKeyDown = (e: KeyboardEvent) => {
     if (e.key === 'Escape') {
       isModalOpen.set(false)
       closeModal()
@@ -25,15 +25,13 @@ export default () => {
 
   const closeModal = () => {
     document.body.classList.remove('no-scroll')
-    // ts does not yet support HTMLDialogElement.close()
-    if (dialog.current) (dialog.current as any).close()
+    if (dialog.current) dialog.current.close()
   }
 
   useEffect((): () => void => {
     if ($isModalOpen) {
       document.body.classList.add('no-scroll')
-      // ts does not yet support HTMLDialogElement.showModal()
-      if (dialog.current) (dialog.current as any).showModal()
+      if (dialog.current) dialog.current.showModal()
       const fetchData = async () => {
         const response = await fetch('https://git-profile-info.vercel.app')
         const json: GitProfileApiResponse = await response.json()
