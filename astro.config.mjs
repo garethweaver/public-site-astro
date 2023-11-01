@@ -4,9 +4,6 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   output: 'static',
-  // adapter: deno({
-  //   // analytics: true,
-  // }),
   site: 'https://www.garethweaver.com',
   compressHTML: true,
   integrations: [
