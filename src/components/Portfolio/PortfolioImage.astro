@@ -1,0 +1,25 @@
+---
+import type { PortfolioItem } from './PortfolioList.astro'
+const { item, lazy } = Astro.props
+
+export interface Props {
+  item: PortfolioItem,
+  lazy: boolean,
+}
+---
+
+<img
+  src={`${item.frontmatter.thumb?.url}?tr=w-375`}
+  srcset={`${item.frontmatter.thumb?.url}?tr=w-375 1x, ${item.frontmatter.thumb?.url}?tr=w-750 2x`}
+  width="375"
+  height="281"
+  loading={lazy ? 'lazy' : 'eager'}
+  alt={item.frontmatter.title}
+/>
+
+<style lang="sass">
+  img
+    display: block
+    width: 100%
+    height: auto
+</style>

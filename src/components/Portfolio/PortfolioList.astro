@@ -1,5 +1,6 @@
 ---
 import type { Props as PortfolioItemFrontmatter } from './PortfolioDetail.astro'
+import PortfolioImage from './PortfolioImage.astro'
 
 export interface PortfolioItem {
   frontmatter: PortfolioItemFrontmatter
@@ -25,27 +26,13 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
             target="_blank"
             rel="nofollow"
             href={item.frontmatter.url}>
-            <img
-              src={`${item.frontmatter.thumb?.url}?tr=w-375`}
-              srcset={`${item.frontmatter.thumb?.url}?tr=w-375 1x, ${item.frontmatter.thumb?.url} 2x`}
-              width="375"
-              height="281"
-              loading={idx > 0 ? 'lazy' : 'eager'}
-              alt={item.frontmatter.title}
-            />
+            <PortfolioImage item={item} lazy={idx > 0} />
           </a>
-        ) : (
-          <a
+          ) : (
+            <a
             rel="prefetch"
             href={`/portfolio/${item.frontmatter.slug}`}>
-            <img
-              src={`${item.frontmatter.thumb?.url}?tr=w-375`}
-              srcset={`${item.frontmatter.thumb?.url}?tr=w-375 1x, ${item.frontmatter.thumb?.url} 2x`}
-              width="375"
-              height="281"
-              loading={idx > 0 ? 'lazy' : 'eager'}
-              alt={item.frontmatter.title}
-            />
+            <PortfolioImage item={item} lazy={idx > 0} />
           </a>
         )}
       </li>
@@ -77,9 +64,4 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
     display: block
     background: rgba(0, 0, 0, 0.2)
     display: block
-
-  img
-    display: block
-    width: 100%
-    height: auto
 </style>
