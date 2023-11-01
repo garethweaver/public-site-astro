@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
+import me from "../../public/desk-3.svg?raw";
 ---
 
 <Layout
@@ -18,11 +19,7 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
       <ScrollButton />
     </div>
     <div class="desk">
-      <img
-        fetchpriority="high"
-        class="me"
-        alt="Pixel art of Gareth sat at a desk with a laptop viewed from above"
-        src="/desk-3.svg" />
+      <Fragment set:html={me} />
     </div>
   </div>
   <div id="portfolio-anchor" />
@@ -75,19 +72,20 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
       height: 100%
       width: 100%
       mix-blend-mode: overlay
-  .me
-    position: absolute
-    top: 0
-    left: 60%
-    width: 400px
-    transform: translate(-50%, -221px)
-    +media-up(sm)
-      width: 450px
-      transform: translate(-50%, -249.5px)
-    +media-up(md)
-      left: 69%
-      width: 610px
-      transform: translate(-50%, -337.5px)
+
+    :global(svg)
+      position: absolute
+      top: 0
+      left: 60%
+      width: 400px
+      transform: translate(-50%, -221px)
+      +media-up(sm)
+        width: 450px
+        transform: translate(-50%, -249.5px)
+      +media-up(md)
+        left: 69%
+        width: 610px
+        transform: translate(-50%, -337.5px)
 
   // offset for fixed desktop nav
   #portfolio-anchor
