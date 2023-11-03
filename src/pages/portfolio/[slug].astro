@@ -27,11 +27,11 @@ export async function getStaticPaths() {
   })
 }
 
-const { meta } = Astro.props
+const { meta, ...rest } = Astro.props
 ---
 
 <Layout
   title={meta.title}
   description={meta.description}>
-  <PortolioDetail {...Astro.props} />
+  <PortolioDetail {...rest} />
 </Layout>
