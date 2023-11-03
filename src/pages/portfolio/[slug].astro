@@ -2,6 +2,11 @@
 import Layout from '@layouts/Layout.astro'
 import PortolioDetail, { type Props as PortfolioItem } from '@components/Portfolio/PortfolioDetail.astro'
 
+interface Item {
+  frontmatter: PortfolioItem
+  compiledContent: () => string
+}
+
 export interface Props extends PortfolioItem {
   meta: {
     title: string
@@ -10,7 +15,7 @@ export interface Props extends PortfolioItem {
 }
 
 export async function getStaticPaths() {
-  const items = await Astro.glob('../../content/portfolio/*.md')
+  const items: Item[] = await Astro.glob('../../content/portfolio/*.md')
 
   return items
     .filter(item => !!item.frontmatter.slug)
