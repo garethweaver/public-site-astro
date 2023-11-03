@@ -17,3 +17,9 @@ interface Node {
   name: string
   url: string
 }
+
+export interface GitProfileApiResponse {
+  data: {
+    user: UserData
+  }
+}

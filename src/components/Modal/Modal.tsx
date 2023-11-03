@@ -2,14 +2,8 @@ import { useEffect, useState, useRef } from 'react'
 import { useStore } from '@nanostores/react'
 import { isModalOpen } from '@stores/modalStore'
 import ModalContent from './ModalContent'
-import type { UserData } from './Modal.types'
+import type { UserData, GitProfileApiResponse } from './Modal.types'
 import styles from './Modal.module.sass'
-
-interface GitProfileApiResponse {
-  data: {
-    user: UserData
-  }
-}
 
 export default () => {
   const $isModalOpen: boolean = useStore(isModalOpen)
