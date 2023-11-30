@@ -17,11 +17,11 @@ export const menuItems: MenuItem[] = [
     },
   },
   {
-    title: 'Twitter',
-    icon: 'twitter',
+    title: 'LinkedIn',
+    icon: 'linkedin',
     props: {
       target: '_blank',
-      href: 'https://twitter.com/garethdweaver',
+      href: 'https://www.linkedin.com/in/garethweaver',
     },
   },
   {
