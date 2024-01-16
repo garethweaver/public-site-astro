@@ -29,7 +29,7 @@ export const menuItems: MenuItem[] = [
     icon: 'pdf',
     props: {
       target: '_blank',
-      href: '/GarethWeaverCV.pdf',
+      href: '/GarethWeaverCV',
     },
   }
 ]
