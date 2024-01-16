@@ -1,0 +1,45 @@
+---
+import { referenceList } from '../../content/cv/_references'
+---
+
+<section>
+  <h2>References</h2>
+  <ol>
+    {
+      referenceList.map(reference => (
+        <li>
+          <h4>{reference.name}</h4>
+          <p>
+            {reference.role}
+            <br />
+            {reference.email}
+            <br />
+            {reference.company}
+          </p>
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<style lang="sass">
+  section
+    margin-top: 5em
+    padding-top: 5em
+    border-top: 2px solid #efefef
+
+  ol
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-row-gap: 2em
+    padding: 0
+    list-style: none
+
+  h4
+    color: var(--color-grad-primary)
+    margin: 0 0 0.25rem
+
+  p
+    margin: 0
+    font-size: 0.85em
+</style>

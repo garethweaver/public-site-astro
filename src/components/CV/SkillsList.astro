@@ -1,0 +1,92 @@
+---
+import { skillsList } from '../../content/cv/_skills'
+const { limit, interests } = Astro.props
+
+interface Props {
+  limit: number[]
+  interests?: boolean
+}
+---
+
+<section class="skills">
+  {
+    skillsList.slice(...limit).map((list) => (
+      <>
+        <h4>{list.title}</h4>
+        <ul>
+          {list.skills.map((skill) => (
+            <li>{skill}</li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+</section>
+
+{interests &&
+  <div class="interests">
+    <section>
+      <h3>Mentoring</h3>
+      <p>
+        I've been involved in a 12 month mentoring program at
+        <a href="https://www.arts-emergency.org/" target="_blank">Arts
+        Emergency</a>. This involved meeting once a month with a 6th form
+        student to discuss and practice progamming as well as sharing
+        general insights about common workplace happenings. I also
+        supported them through their Univesity application process.
+      </p>
+    </section>
+    <section>
+      <h3>Codebar</h3>
+      <p>
+        Over the years I've both coached and spoken at
+        <a href="https://codebar.io/" target="_blank">Codebar</a> to help
+        minorities interested in coding improve their programming
+        skills. This often involved instruction as well as mentoring
+        students with interesting personal projects.
+      </p>
+    </section>
+    <section>
+      <h3>Other</h3>
+      <ul>
+        <li>England Touch Rugby</li>
+        <li>London Eagles Touch Exec</li>
+        <li>Snowboarding</li>
+        <li>Everest Basecamp</li>
+        <li>Custom Slack Emojis</li>
+      </ul>
+    </section>
+  </div>
+}
+
+<style lang="sass">
+  ul
+    margin: 0.5em 0 0
+    padding: 0 0 0 1em
+    list-style: circle
+
+  .skills ul + h4
+    margin-top: 1.5em
+
+  .skills h4
+    margin: 0
+    display: inline-block
+    background: var(--color-fg)
+    padding: 0.25em
+    border-radius: 3px
+    color: white
+
+  ul, p
+    font-size: 0.85em
+
+  .interests
+    margin-top: 3em
+    padding-top: 1em
+    border-top: 2px solid #efefef
+
+    h3
+      margin: 1em 0 0
+
+    p
+      margin: 0.5em 0 0
+</style>

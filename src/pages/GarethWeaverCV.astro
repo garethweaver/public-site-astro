@@ -1,0 +1,129 @@
+---
+import Fonts from '@components/Fonts/Fonts.astro'
+import Nav from '@components/CV/CVNav.astro'
+import Header from '@components/CV/CVHeader.astro'
+import SkillsList from '@components/CV/SkillsList.astro'
+import ReferencesList from '@components/CV/ReferencesList.astro'
+import JobsList from '@components/CV/JobsList.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <title>Gareth Weaver CV</title>
+    <meta
+      name="description"
+      content="I'm a lead frontend engineer with over 13 years of experience. React, AstroJs, GatsbyJs, ES6, Typescript, CSS, HTML5, Sass, Express, Pug, Line Management, Mentoring, Public Speaking." />
+    <meta
+      property="og:image"
+      content="https://ik.imagekit.io/garethweaver/ogimage.jpg"
+    />
+    <Fonts />
+  </head>
+  <body>
+    <Nav />
+    <main>
+      <div class="page">
+        <Header />
+        <article class="cols">
+          <aside>
+            <SkillsList limit={[0, 5]} />
+          </aside>
+          <JobsList limit={[0, 4]} />
+        </article>
+      </div>
+      <div class="page">
+        <div class="cols">
+          <aside>
+            <SkillsList limit={[6, 10]} interests />
+          </aside>
+          <JobsList limit={[4, 11]} />
+        </div>
+      </div>
+      <div class="page">
+        <div class="cols">
+          <aside />
+          <div>
+            <JobsList limit={[12, 14]} />
+            <ReferencesList />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style lang="sass" is:global>
+  @import'../style/variables'
+
+  html
+    font-size: 12px
+
+  *::selection
+    background: rgba(var(--color-highlight-rgb), 0.9)
+    color: black
+
+  *
+    box-sizing: border-box
+
+  a
+    color: var(--color-grad-primary)
+
+  @page
+    margin: 0
+    size: A4
+
+  body
+    font-family: var(--font-family-body)
+    font-weight: 300
+    padding: 0
+    margin: 0
+    line-height: 1.4
+    @media screen
+      background: var(--color-bg)
+      padding: 0 0 4em
+
+  .page
+    background: white
+    width: 210mm
+    max-width: 210mm
+    height: 297mm
+    max-height: 297mm
+    padding: 4em
+    @media screen
+      margin: 1em auto
+      border-radius: 0.5em
+      overflow: hidden
+
+  h1, h2, h3, h4, h5, h6
+    margin-top: 0
+    font-family: var(--font-family-heading)
+    font-weight: 800
+    line-height: 1.2
+
+  .pill
+    display: inline-block
+    font-weight: bold
+    color: var(--color-fg)
+    margin-right: 5px
+    padding: 0.25em
+    border-radius: 3px
+    border: 1px solid var(--color-fg)
+
+  .cols
+    display: grid
+    grid-template-columns: 20% 1fr
+    grid-column-gap: 3.5em
+</style>

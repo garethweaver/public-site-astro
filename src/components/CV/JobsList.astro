@@ -1,0 +1,69 @@
+---
+import { jobsList } from '../../content/cv/_jobs'
+const { limit } = Astro.props
+
+interface Props {
+  limit: number[]
+}
+---
+
+<div class="jobs">
+  {limit[0] === 0 &&
+  <section>
+    <h3 class="uni">
+      <span>
+        University of Exeter<br />
+        BSc (Hons) Biological Sciences - 2:1
+        </span>
+        <span class="date">SEP06 - AUG09 - 3Y00M</span>
+        </h3>
+        </section>
+  }
+  {
+    jobsList.slice(...limit).map((job) => (
+      <section>
+        <h2>{job.title}</h2>
+        <div class="meta">
+          {job.meta.map((meta) => (
+            <span class="pill">{meta}</span>
+          ))}
+          <span>
+            {job.date.from} - {job.date.to} - {job.date.duration}
+          </span>
+        </div>
+        <div set:html={job.body} />
+      </section>
+    ))
+  }
+</div>
+
+<style lang="sass">
+  .uni
+    display: flex
+    align-items: flex-end
+
+  .uni .date
+    margin-left: auto
+    font-weight: normal
+    font-size: 0.875rem
+
+  .jobs section + section
+    margin-top: 2.5em
+
+  .jobs :global(p)
+    margin: 1rem 0 0
+    font-size: 0.85em
+
+  .jobs h2
+    margin: 0 0 0.5rem
+    color: var(--color-grad-primary)
+
+  .meta
+    font-size: 0.875rem
+    display: flex
+    align-items: baseline
+    font-family: var(--font-family-heading)
+
+  .meta *:last-child
+    margin-left: auto
+</style>

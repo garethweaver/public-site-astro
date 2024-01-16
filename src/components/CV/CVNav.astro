@@ -1,0 +1,40 @@
+---
+import Icon from '@components/Icon/Icon.astro'
+---
+
+<header class="nav">
+  <a href="/">
+    <Icon use="cursor" />
+    Home
+  </a>
+  <a href="/GarethWeaverCV.pdf" target="_blank">
+    <Icon use="pdf" />
+    Download PDF
+  </a>
+</header>
+
+<style lang="sass">
+  .nav
+    background: var(--color-fg)
+    color: white
+    padding: 2rem 0
+    margin-bottom: 5rem
+    text-align: center
+    display: flex
+    justify-content: center
+    font-family: var(--font-family-heading)
+    font-size: 1.5rem
+
+    @media print
+      display: none
+
+  a
+    display: flex
+    color: white
+    text-decoration: none
+    padding: 0 1em
+
+  :global(svg)
+    fill: white
+    margin-right: 0.75rem
+</style>
