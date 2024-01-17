@@ -173,7 +173,7 @@ export const jobsList: JobList[] = [
     date: {
       from: 'JUN14',
       to: 'SEP14',
-      duration: '0Y04M',
+      duration: '0Y03M',
     },
     body: '<p>A three month contract working with Bootstrap, Haml, SCSS and CoffeeScript to rebuild the frontend of the Big Sofa web app based on pre-provided designs. I worked between the project technical lead and the junior development team.</p>',
   },
