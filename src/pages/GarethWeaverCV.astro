@@ -70,7 +70,8 @@ import JobsList from '@components/CV/JobsList.astro'
 
   html
     font-size: 12px
-    min-width: 220mm
+    @media screen
+      min-width: 220mm
 
   *::selection
     background: rgba(var(--color-highlight-rgb), 0.9)
