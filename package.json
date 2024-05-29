@@ -14,17 +14,17 @@
     "node": "20"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
+    "@astrojs/check": "^0.7.0",
     "@astrojs/prefetch": "^0.4.1",
-    "@astrojs/react": "^3.0.9",
-    "@nanostores/react": "^0.7.1",
-    "@types/react": "^18.2.48",
-    "astro": "^4.1.2",
-    "nanostores": "^0.9.5",
+    "@astrojs/react": "^3.4.0",
+    "@nanostores/react": "^0.7.2",
+    "@types/react": "^18.3.3",
+    "astro": "^4.9.2",
+    "nanostores": "^0.10.3",
     "normalize.css": "^8.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.69.7",
-    "typescript": "^5.3.3"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5"
   }
 }
