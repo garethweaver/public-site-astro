@@ -1,0 +1,22 @@
+---
+import HaikuDetail from '@components/Haikus/HaikuDetail.astro';
+import Layout from '@layouts/Layout.astro'
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const items: any = await getCollection('haikus')
+
+  return items
+    .map(item => {
+      return {
+        params: { slug: item.slug },
+        props: { item },
+      }
+  })
+}
+
+const { item } = Astro.props;
+---
+<Layout title="Haikus" description="My haikus">
+  <HaikuDetail {...item}>
+</Layout>

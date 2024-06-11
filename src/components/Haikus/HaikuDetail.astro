@@ -1,0 +1,36 @@
+---
+const { body } = Astro.props
+---
+
+<article class="PortfolioDetail">
+  <div class="inner">
+    <!-- <h1>{title}</h1> -->
+    <div class="body" set:html={body} />
+  </div>
+</article>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  .PortfolioDetail
+    background: var(--color-fg)
+    max-width: var(--max-width)
+    margin: 0 auto
+    padding: 2em 1em
+    border-radius: 0.5em
+    +media-up(md)
+      padding: 2em
+
+  .inner
+    margin: 0 auto
+    max-width: var(--max-content-width)
+    +media-up(md)
+      padding-top: 8rem
+
+  h1
+    margin: 0 0 0.25em
+
+  .body
+    line-height: 1.5
+    white-space: break-spaces
+</style>
