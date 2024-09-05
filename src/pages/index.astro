@@ -41,6 +41,8 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
     overflow: hidden
     +media-up(md)
       min-height: 85vh
+    +media-up(xxl)
+      min-height: 42.5em
 
   .inner
     max-width: 440px
@@ -52,6 +54,9 @@ import ScrollButton from '@components/ScrollButton/ScrollButton.astro'
     +media-up(lg)
       margin-left: 8vw
       padding-top: 15vh
+    +media-up(xxl)
+      margin-left: 10%
+      padding-top: 15%
 
   .subtitle
     line-height: 1.3
