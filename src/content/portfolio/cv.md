@@ -1,5 +1,5 @@
 ---
-url: https://www.garethweaver.com/GarethWeaverCV.pdf
+url: https://www.garethweaver.com/GarethWeaverCV
 order: -40
 thumb:
   url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-cv.png
