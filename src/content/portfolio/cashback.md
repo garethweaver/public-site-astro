@@ -4,7 +4,7 @@ url: /portfolio/cashbackcard
 order: -35
 thumb:
   url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-cashback-card.png
-  gradient: 135
+  gradient: 75
 title: CashbackCard.com
 external: false
 type: Website Design

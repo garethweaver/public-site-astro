@@ -4,7 +4,7 @@ url: /portfolio/illustration
 order: -30
 thumb:
   url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-illustration.png
-  gradient: 135
+  gradient: 190
 title: Illustrations
 external: false
 type: For Fun
