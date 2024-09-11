@@ -20,7 +20,9 @@ export default (props: {
           ? `${props.className} ${styles.button}`
           : styles.button
       }
-      onClick={handleClick}>
+      onClick={handleClick}
+      aria-label="Open Github modal"
+      title="Open Github modal">
       {props.children}
     </button>
   )
