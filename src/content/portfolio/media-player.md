@@ -13,11 +13,11 @@ tools: CoffeeScript
 live_site: http://api-docs.bigsofa.co.uk/player
 images:
   - url: https://ik.imagekit.io/garethweaver/media-player-1-lg.jpg
-    alt:
+    alt: Embedded media player with transcript and tagging ui
     height: 900
     width: 900
   - url: https://ik.imagekit.io/garethweaver/media-player-2-lg.jpg
-    alt:
+    alt: Embedded media player with transcript
     height: 900
     width: 900
 next_page: /illustration

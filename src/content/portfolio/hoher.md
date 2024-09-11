@@ -13,7 +13,7 @@ tools: Photoshop, Middleman, Haml, Sass
 repository: https://github.com/garethweaver/hoher
 images:
   - url: https://ik.imagekit.io/garethweaver/hoher-1-lg.jpg
-    alt:
+    alt: The Höher homepage showing products for sale
     height: 3335
     width: 1200
     mobile:

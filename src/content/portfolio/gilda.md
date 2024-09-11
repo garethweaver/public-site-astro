@@ -12,7 +12,7 @@ tools: ES6, Handlebars, Sass, Webpack
 live_site: http://gilda.co
 images:
   - url: https://ik.imagekit.io/garethweaver/gilda-1-lg.jpg
-    alt:
+    alt: The GILDA one page website
     height: 7092
     width: 1200
     mobile:

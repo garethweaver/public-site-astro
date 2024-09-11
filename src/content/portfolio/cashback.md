@@ -12,7 +12,7 @@ year: 2014
 tools: Photoshop
 images:
   - url: https://ik.imagekit.io/garethweaver/cashback-card-1.jpg
-    alt:
+    alt: Cashbackcard.com brochure homepage
     height: 3473
     width: 900
 next_page: /hoher-backpacks

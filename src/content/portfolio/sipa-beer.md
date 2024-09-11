@@ -11,7 +11,7 @@ year: 2020
 tools: Illustrator
 images:
   - url: https://ik.imagekit.io/garethweaver/sipa-lg.jpg
-    alt:
+    alt: A mockup of the SIPA label on a beer can
     height: 1200
     width: 1200
     mobile:

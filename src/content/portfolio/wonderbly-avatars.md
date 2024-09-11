@@ -12,7 +12,7 @@ tools: React, Hooks, Sass
 live_site: https://www.wonderbly.com/personalized-products/super-epic-love-quest-book
 images:
   - url: https://ik.imagekit.io/garethweaver/avatars-1-lg.jpg
-    alt:
+    alt: Wonderbly avatars UI showing step 1 with text name inputs
     height: 1067
     width: 1200
     mobile:
@@ -20,7 +20,7 @@ images:
       height: 900
       width: 600
   - url: https://ik.imagekit.io/garethweaver/avatars-2-lg.jpg
-    alt:
+    alt: Wonderbly avatars UI showing step 4 with hair customisation radio inputs
     height: 1067
     width: 1200
     mobile:

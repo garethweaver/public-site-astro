@@ -12,7 +12,7 @@ tools: Photoshop, Middleman, Haml, Scss, Anchor CMS
 live_site: http://www.sdosteopaths.co.uk/
 images:
   - url: https://ik.imagekit.io/garethweaver/sd-osteopaths-1.jpg
-    alt:
+    alt: St David's Osteopaths website homepage
     height: 1697
     width: 900
 next_page: /headless-ghost

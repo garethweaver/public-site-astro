@@ -13,7 +13,7 @@ live_site: http://www.headlessghost.com/
 repository: https://github.com/garethweaver/headlessghost
 images:
   - url: https://ik.imagekit.io/garethweaver/headless-ghost-1.jpg
-    alt:
+    alt: Headless Ghost brochure website homepage design
     height: 3438
     width: 1200
 next_page: /dove-concept-adverts

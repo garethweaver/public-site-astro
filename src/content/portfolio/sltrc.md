@@ -14,7 +14,7 @@ live_site: http://www.southlondontouchrugby.co.uk/
 repository: https://github.com/garethweaver/sltrc
 images:
   - url: https://ik.imagekit.io/garethweaver/south-london-touch-1-lg.gif
-    alt:
+    alt: SLTRC logo with a tiger's head and wordmark
     height: 1000
     width: 1200
     mobile:
@@ -22,7 +22,7 @@ images:
       height: 695
       width: 600
   - url: https://ik.imagekit.io/garethweaver/south-london-touch-2-lg.gif
-    alt:
+    alt: SLTRC logo showing only the tiger's head
     height: 1000
     width: 1200
     mobile:
@@ -30,7 +30,7 @@ images:
       height: 600
       width: 600
   - url: https://ik.imagekit.io/garethweaver/south-london-touch-3-lg.jpg
-    alt:
+    alt: Old SLTRC logo of leaping tiger with lettering
     height: 1000
     width: 1200
     mobile:

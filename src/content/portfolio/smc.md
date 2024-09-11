@@ -12,7 +12,7 @@ tools: ES6, Tumlr, Sass
 live_site: http://stellamccartney.tumblr.com/
 images:
   - url: https://ik.imagekit.io/garethweaver/stella-mccartney-1-lg.jpg
-    alt:
+    alt: Stella McCartney Tumblr website homepage
     height: 1648
     width: 1200
     mobile:
@@ -20,7 +20,7 @@ images:
       height: 824
       width: 600
   - url: https://ik.imagekit.io/garethweaver/stella-mccartney-2-lg.jpg
-    alt:
+    alt: Stella McCartney Tumblr website post page
     height: 1339
     width: 1200
     mobile:

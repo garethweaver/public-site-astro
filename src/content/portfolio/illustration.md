@@ -12,15 +12,15 @@ year: 2012
 tools: Photoshop, Illustrator
 images:
   - url: https://ik.imagekit.io/garethweaver/illustration-1.jpg
-    alt:
+    alt: A cartoon robot illustration
     height: 1000
     width: 900
   - url: https://ik.imagekit.io/garethweaver/illustration-2.jpg
-    alt:
+    alt: An illustrated banana with a grin holding balloons
     height: 1000
     width: 900
   - url: https://ik.imagekit.io/garethweaver/illustration-3.jpg
-    alt:
+    alt: A cartoon robin saying happy xmas
     height: 700
     width: 900
 next_page: /cashbackcard

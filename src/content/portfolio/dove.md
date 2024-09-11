@@ -12,7 +12,7 @@ year: 2015
 tools: Angular 1, CoffeeScript, Sass, Haml
 images:
   - url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-1-lg.jpg
-    alt:
+    alt: Dove adcepts app dashboard ui
     height: 800
     width: 1200
     mobile:
@@ -20,7 +20,7 @@ images:
       height: 400
       width: 600
   - url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-2-lg.jpg
-    alt:
+    alt: Dove adcepts app search ui
     height: 800
     width: 1200
     mobile:
@@ -28,7 +28,7 @@ images:
       height: 400
       width: 600
   - url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-3-lg.jpg
-    alt:
+    alt: Dove adcepts app analysis ui
     height: 800
     width: 1200
     mobile:

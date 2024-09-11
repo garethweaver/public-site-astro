@@ -12,15 +12,15 @@ tools: Photoshop, Haml, Scss, CoffeeScript, AngularJs, Rspec
 live_site: http://www.bigsofa.co.uk/
 images:
   - url: https://ik.imagekit.io/garethweaver/big-sofa-1.jpg
-    alt:
+    alt: Bigsofa webapp homepage showing media listing and upload ui
     height: 922
     width: 900
   - url: https://ik.imagekit.io/garethweaver/big-sofa-2.jpg
-    alt:
+    alt: Bigsofa webapp login page
     height: 854
     width: 900
   - url: https://ik.imagekit.io/garethweaver/big-sofa-3.jpg
-    alt:
+    alt: Mockup of the Bigsofa dashboard showing stats and media uploads
     height: 1261
     width: 900
 next_page: /sd-osteopaths

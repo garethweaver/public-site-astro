@@ -13,7 +13,7 @@ tools: React, GatsbyJS, Sass
 live_site: https://maisonhanko.com
 images:
   - url: https://ik.imagekit.io/garethweaver/maison-hanko-1-lg.jpg
-    alt:
+    alt: Maison Hanko homepage showcasing artists' works
     height: 4083
     width: 1200
     mobile:
@@ -21,7 +21,7 @@ images:
       height: 2042
       width: 600
   - url: https://ik.imagekit.io/garethweaver/maison-hanko-2-lg.jpg
-    alt:
+    alt: Maison Hanko artist page showing in depth detail of work
     height: 2800
     width: 1200
     mobile:

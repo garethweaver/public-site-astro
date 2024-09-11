@@ -13,7 +13,7 @@ repository: https://github.com/garethweaver/in2touch-react
 live_site: https://garethweaver.github.io/in2touch-react/
 images:
   - url: https://ik.imagekit.io/garethweaver/in2touch-1-lg.jpg
-    alt:
+    alt: The app showing the homescreen with team and league data
     height: 1067
     width: 1200
     mobile:
@@ -21,7 +21,7 @@ images:
       height: 1067
       width: 600
   - url: https://ik.imagekit.io/garethweaver/in2touch-2-lg.jpg
-    alt:
+    alt: The app showing the a team's fixtures
     height: 1067
     width: 1200
     mobile:
@@ -29,7 +29,7 @@ images:
       height: 1067
       width: 600
   - url: https://ik.imagekit.io/garethweaver/in2touch-3-lg.jpg
-    alt:
+    alt: The app showing the a league table
     height: 1067
     width: 1200
     mobile:
