@@ -11,8 +11,24 @@ year: 2023-2016
 tools: AstroJs, React, Typescript, Sass, [GatsbyJs, AngularJs]
 repository: https://github.com/garethweaver/public-site-astro
 images:
+  - url: https://ik.imagekit.io/garethweaver/gareth-weaver-3-lg.jpg
+    alt: New AstroJS website and theme
+    height: 1151
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/gareth-weaver-3-sm.jpg
+      height: 575
+      width: 600
+  - url: https://ik.imagekit.io/garethweaver/gareth-weaver-2-lg.jpg
+    alt: 100% lighthouse benchmark scores
+    height: 1130
+    width: 1200
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/gareth-weaver-2-sm.jpg
+      height: 565
+      width: 600
   - url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-lg.jpg
-    alt:
+    alt: Legacy website and theme
     height: 1166
     width: 1200
     mobile:
