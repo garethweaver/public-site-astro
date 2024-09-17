@@ -2,7 +2,7 @@ interface MenuItem {
   title: string
   icon: string
   props: {
-    target: string
+    target?: string
     href: string
   }
 }
@@ -25,11 +25,18 @@ export const menuItems: MenuItem[] = [
     },
   },
   {
+    title: 'Haikus',
+    icon: 'pencil',
+    props: {
+      href: '/haikus/1',
+    },
+  },
+  {
     title: 'CV.pdf',
     icon: 'pdf',
     props: {
       target: '_blank',
       href: '/GarethWeaverCV',
     },
-  }
+  },
 ]
