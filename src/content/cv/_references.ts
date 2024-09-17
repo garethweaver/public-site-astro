@@ -13,16 +13,22 @@ export const referenceList: Reference[] = [
     company: 'Wonderbly',
   },
   {
-    name: 'Nick Scott',
-    role: 'Tech Lead',
-    email: 'nick.scott@kortical.com',
-    company: 'Kortical',
+    name: 'Jack Hardy',
+    role: 'Engineering Manager',
+    email: 'jack.hardy@collectivfood.com',
+    company: 'Collectiv Food',
   },
   {
     name: 'Liam Walsh',
     role: 'Creative Tech Director',
     email: 'liam@liamwalsh.com',
     company: 'Nexus Studios',
+  },
+  {
+    name: 'Nick Scott',
+    role: 'Tech Lead',
+    email: 'nick.scott@kortical.com',
+    company: 'Kortical',
   },
   {
     name: 'Joe Smalley',
