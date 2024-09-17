@@ -1,0 +1,70 @@
+---
+const { page } = Astro.props
+
+export interface Props {
+  page: {
+    currentPage: number
+    lastPage: number
+    url: {
+      first?: string
+      prev?: string
+      next?: string
+      last?: string
+    },
+  },
+}
+---
+
+<nav>
+  <ul>
+    {page.url.prev
+      ? <li>
+          <a
+            href={page.url.prev}
+            rel="prefetch"
+            title="Previous page">
+            Prev
+          </a>
+        </li>
+      : <li><span  class="disabled">Prev</span></li>
+    }
+    <li>Page {page.currentPage}/{page.lastPage}</li>
+    {page.url.next
+      ? <li>
+          <a
+            href={page.url.next}
+            rel="prefetch"
+            title="Next page">
+            Next
+          </a>
+        </li>
+      : <li><span  class="disabled">Next</span></li>
+    }
+  </ul>
+</nav>
+
+<style lang="sass">
+  nav
+    text-align: center
+    display: flex
+    align-items: center
+    font-size: 1em
+    font-family: var(--font-family-heading)
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    width: 100%
+    justify-content: center
+  li
+    padding: 0 0.5em
+  a
+    padding: 1rem
+
+  .disabled
+    padding: 1rem
+    opacity: 0.2
+    cursor: not-allowed
+</style>

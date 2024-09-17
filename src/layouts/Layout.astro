@@ -2,8 +2,7 @@
 import 'normalize.css'
 import Fonts from '@components/Fonts/Fonts.astro'
 import Header from '@components/Header/Header.astro'
-import PortfolioList from '@components/Portfolio/PortfolioList.astro'
-import Modal from '../components/Modal/Modal'
+import Modal from '@components/Modal/Modal'
 import Footer from '@components/Footer/Footer.astro'
 
 export interface Props {
@@ -39,7 +38,6 @@ const { href } = Astro.url
     <Header lockedHeader={lockedHeader} />
     <main>
       <slot />
-      <PortfolioList />
     </main>
     <Footer />
     <Modal client:idle />

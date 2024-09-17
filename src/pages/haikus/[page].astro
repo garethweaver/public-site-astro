@@ -1,0 +1,61 @@
+---
+import Layout from '@layouts/Layout.astro'
+import HaikuDetail from '@components/Haikus/HaikuDetail.astro'
+import { getCollection } from 'astro:content'
+import type { Page, GetStaticPathsOptions } from 'astro'
+import Pagination from '@components/Pagination/Pagination.astro'
+
+export interface HaikuItem {
+  data: {
+    title: string,
+    year: number,
+  }
+  body: string
+}
+
+export async function getStaticPaths(
+  { paginate } : GetStaticPathsOptions
+) {
+  let items: any = await getCollection('haikus')
+  items = items.sort((a: HaikuItem, b: HaikuItem) => b.data.year - a.data.year)
+  return paginate(items, { pageSize: 6 })
+}
+
+const { page } : { page: Page } = Astro.props
+---
+
+<Layout
+  title="Gareth Weaver - Haikus"
+  description="Read some of the Haikus I've written over the years.">
+  <div  class="HaikuWrap">
+    <div class="inner">
+      {page.data.map((item: HaikuItem, idx: number) => (
+        <HaikuDetail
+          key={idx}
+          idx={idx}
+          {...item}
+          />
+      ))}
+    </div>
+    <Pagination page={page} />
+  </div>
+</Layout>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  .HaikuWrap
+    background: var(--color-fg)
+    max-width: var(--max-width)
+    margin: 0 auto
+    padding: 2em 1em
+    border-radius: 0.5em
+    +media-up(md)
+      padding: 4em 2em 3em
+
+  .inner
+    margin: 0 auto
+    max-width: var(--max-content-width)
+    +media-up(md)
+      padding-top: 8rem
+</style>

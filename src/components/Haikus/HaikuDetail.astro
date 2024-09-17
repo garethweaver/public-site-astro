@@ -1,0 +1,86 @@
+---
+const { body, idx, data } = Astro.props
+---
+
+<article class:list={['HaikuDetail', idx % 2 === 0 ? 'left' : 'right']}>
+  <div class="body">
+    <p class="text" set:html={body} />
+    <div class="detail">
+      <h2><span>{data?.title}</span></h2>
+      <p><span>{data?.year}</span></p>
+    </div>
+  </div>
+</article>
+
+<style lang="sass">
+  @import '../../style/base'
+
+  .HaikuDetail
+    margin-bottom: 7em
+    +media-up(lg)
+      margin-bottom: 8em
+
+  .body
+    +media-up(md)
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08)
+      border-radius: 0.5em
+      padding: 2em
+      display: inline-block
+
+  .text
+    margin: 0
+    white-space: break-spaces
+    line-height: 1.5
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 2px
+      height: 100%
+      background: linear-gradient(0deg, var(--color-grad-primary) 0%, var(--color-grad-secondary) 100%)
+
+  .detail
+    margin-top: 1em
+    font-family: var(--font-family-heading)
+
+    +media-up(md)
+      display: flex
+      margin-top: 1.5em
+
+    > *
+      font-size: 1em
+      font-weight: 400
+      margin: 0.1em 0 0
+      font-size: 0.85em
+
+      &:first-child
+        margin: 0
+
+      +media-up(md)
+        margin: 0 0 0 0.5em
+        &:first-child
+          margin: 0
+
+  .detail span
+    background: var(--gradient)
+    padding: 0.25em
+    border-radius: 3px
+    display: inline-block
+
+  .left .text
+      padding-left: 1em
+
+  .right
+    text-align: right
+    .text
+      padding-right: 1em
+    .text::after
+      left: auto
+      right: 0
+    +media-up(md)
+      .detail
+        justify-content: flex-end
+</style>

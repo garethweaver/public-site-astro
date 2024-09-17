@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import PortolioDetail, { type Props as PortfolioItem } from '@components/Portfolio/PortfolioDetail.astro'
+import PortfolioList from '@components/Portfolio/PortfolioList.astro'
 
 interface Item {
   frontmatter: PortfolioItem
@@ -34,4 +35,5 @@ const { meta, ...rest } = Astro.props
   title={meta.title}
   description={meta.description}>
   <PortolioDetail {...rest} />
+  <PortfolioList />
 </Layout>
