@@ -7,8 +7,8 @@ import Pagination from '@components/Pagination/Pagination.astro'
 
 export interface HaikuItem {
   data: {
-    title: string,
-    year: number,
+    title: string
+    year: number
   }
   body: string
 }
@@ -16,7 +16,7 @@ export interface HaikuItem {
 export async function getStaticPaths(
   { paginate } : GetStaticPathsOptions
 ) {
-  let items: any = await getCollection('haikus')
+  let items: HaikuItem[] = await getCollection('haikus')
   items = items.sort((a: HaikuItem, b: HaikuItem) => b.data.year - a.data.year)
   return paginate(items, { pageSize: 6 })
 }
@@ -29,6 +29,17 @@ const { page } : { page: Page } = Astro.props
   description="Read some of the Haikus I've written over the years.">
   <div  class="HaikuWrap">
     <div class="inner">
+      {page.currentPage === 1 && (
+        <div class="intro">
+          <h1>My Haikus</h1>
+          <p>
+            A haiku is a Japanese poem that consists of three lines. There are
+            five syllables in the first line, seven in the second, and five in
+            the third. Over the years I've written quite a few Haikus, mainly
+            for my own amusement more than the amusement of others.
+          </p>
+        </div>
+      )}
       {page.data.map((item: HaikuItem, idx: number) => (
         <HaikuDetail
           key={idx}
@@ -51,11 +62,20 @@ const { page } : { page: Page } = Astro.props
     padding: 2em 1em
     border-radius: 0.5em
     +media-up(md)
-      padding: 4em 2em 3em
+      padding: 2em
 
   .inner
     margin: 0 auto
     max-width: var(--max-content-width)
     +media-up(md)
       padding-top: 8rem
+
+  .intro
+    line-height: 1.5
+    margin-bottom: 5em
+    +media-up(md)
+      margin-bottom: 6em
+
+  h1
+    margin-top: 0
 </style>
