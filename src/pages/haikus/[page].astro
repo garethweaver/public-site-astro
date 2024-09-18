@@ -42,7 +42,6 @@ const { page } : { page: Page } = Astro.props
       )}
       {page.data.map((item: HaikuItem, idx: number) => (
         <HaikuDetail
-          key={idx}
           idx={idx}
           {...item}
           />

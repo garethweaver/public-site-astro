@@ -1,13 +1,18 @@
 ---
+import type { HaikuItem } from 'src/pages/haikus/[page].astro'
 const { body, idx, data } = Astro.props
+
+export interface Props extends HaikuItem {
+  idx: number
+}
 ---
 
 <article class:list={['HaikuDetail', idx % 2 === 0 ? 'left' : 'right']}>
   <div class="body">
     <p class="text" set:html={body} />
     <div class="detail">
-      <h2><span>{data?.title}</span></h2>
-      <p><span>{data?.year}</span></p>
+      <h2><span>{data.title}</span></h2>
+      <p><span>{data.year}</span></p>
     </div>
   </div>
 </article>
