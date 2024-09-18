@@ -3,5 +3,5 @@ title: The end
 year: 2023
 ---
 Pothole in my heart
-All good things come to an end
-The flames turn to dust.
+all good things come to an end
+the flames turn to dust.
