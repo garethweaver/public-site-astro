@@ -27,8 +27,8 @@ const { page } : { page: Page } = Astro.props
 <Layout
   title="Gareth Weaver - Haikus"
   description="Read some of the Haikus I've written over the years.">
-  <div  class="HaikuWrap">
-    <div class="inner">
+  <div class="HaikuWrap">
+    <div class:list={['inner', { 'no-padd': page.currentPage === 1 }]}>
       {page.currentPage === 1 && (
         <div class="intro">
           <h1>My Haikus</h1>
@@ -67,6 +67,10 @@ const { page } : { page: Page } = Astro.props
   .inner
     margin: 0 auto
     max-width: var(--max-content-width)
+    padding-top: 2em
+    +media-down(md)
+      &.no-padd
+        padding-top: 0
     +media-up(md)
       padding-top: 8rem
 
