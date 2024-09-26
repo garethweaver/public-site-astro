@@ -77,10 +77,10 @@ export const jobsList: JobList[] = [
     ],
     date: {
       from: 'JUN19',
-      to: 'JUL19',
+      to: 'JUL19|SEP24',
       duration: '0Y02M',
     },
-    body: '<p>I built a <a href="https://garethweaver.github.io/in2touch-react/" target="_blank">small react app</a> which sources data from an already existing website. The app allows users to browse, save teams and leagues to their homepage, and to see fixtures and league positions. A node script deployed to Heroku updates the Firebase database daily.</p>',
+    body: '<p>I built a <a href="http://in2touch-unofficial.co.uk/" target="_blank">small react app</a> which sources data from an already existing website. The app allows users to browse, save teams and leagues to their homepage, and to see fixtures and league positions. A node script deployed to Heroku updates the Firebase database daily. View the <a href="https://github.com/garethweaver/in2touch-unofficial/" target="_blank">repo here</a>.</p>',
   },
   {
     title: "Kortical",
