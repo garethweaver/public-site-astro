@@ -8,6 +8,7 @@ import styles from './Modal.module.sass'
 export default () => {
   const $isModalOpen: boolean = useStore(isModalOpen)
   const [userData, setUserData] = useState<UserData | null>(null)
+  const [hasErrored, setHasErrored] = useState<boolean>(false)
   const dialog = useRef<HTMLDialogElement>(null)
 
   const closeFromKeyDown = (e: KeyboardEvent) => {
@@ -31,7 +32,10 @@ export default () => {
         const json: GitProfileApiResponse = await response.json()
         setUserData(json?.data?.user)
       }
-      fetchData().catch(console.error)
+      fetchData().catch((error) => {
+        setHasErrored(true)
+        console.error(error)
+      })
       window.addEventListener('keydown', closeFromKeyDown)
     } else {
       closeModal()
@@ -51,15 +55,22 @@ export default () => {
             <use href={`/icons/cross.svg#icon`} />
           </svg>
         </button>
-        {userData
-          ? <ModalContent userData={userData} />
-          : (
-            <div className={styles.loader}>
-              <svg height="24" width="24">
-                <use href={`/icons/github.svg#icon`} />
-              </svg>
-            </div>
-          )
+        {!hasErrored && userData &&
+          <ModalContent userData={userData} />
+        }
+        {!hasErrored && !userData &&
+          <div className={styles.loader}>
+            <svg height="24" width="24">
+              <use href={`/icons/github.svg#icon`} />
+            </svg>
+          </div>
+        }
+        {hasErrored &&
+          <div className={styles.loader}>
+            <svg height="24" width="24">
+              <use href={`/icons/cross.svg#icon`} />
+            </svg>
+          </div>
         }
       </div>
     </dialog>
