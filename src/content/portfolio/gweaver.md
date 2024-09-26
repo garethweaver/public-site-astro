@@ -7,7 +7,7 @@ thumb:
 title: This Website
 external: false
 type: Static site
-year: 2023-2016
+year: 2023|2016
 tools: AstroJs, React, Typescript, Sass, [GatsbyJs, AngularJs]
 repository: https://github.com/garethweaver/public-site-astro
 images:
@@ -53,5 +53,5 @@ offering such great control over how much javascript is shipped to the client.
 You can find all the repositories here:
 
 * <a href="https://github.com/garethweaver/public-site-astro" target="_blank" rel="noopener noreferrer">AstroJs, React \[2023\]</a>
-* <a href="https://github.com/garethweaver/public-site-gatsby" target="_blank" rel="noopener noreferrer">GatsbyJs@2.0.0 - GatsbyJs@4.0.0 \[2018\]</a>
-* <a href="https://github.com/garethweaver/public-site-angular" target="_blank" rel="noopener noreferrer">Angular@1.3, Middleman \[2016\]</a>
+* <a href="https://github.com/garethweaver/public-site-gatsby" target="_blank" rel="noopener noreferrer" style="opacity: 0.5;">GatsbyJs@2.0.0 - GatsbyJs@4.0.0 \[2018\]</a>
+* <a href="https://github.com/garethweaver/public-site-angular" target="_blank" rel="noopener noreferrer" style="opacity: 0.5;">Angular@1.3, Middleman \[2016\]</a>
