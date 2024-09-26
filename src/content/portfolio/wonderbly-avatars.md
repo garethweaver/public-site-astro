@@ -1,7 +1,7 @@
 ---
 slug: wonderbly-avatars
 url: /portfolio/wonderbly-avatars
-order: 180
+order: 170
 thumb:
   url: https://ik.imagekit.io/garethweaver/thumb-avatars.jpg
 title: Wonderbly Avatars

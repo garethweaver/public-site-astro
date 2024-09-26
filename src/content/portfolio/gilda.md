@@ -1,7 +1,7 @@
 ---
 slug: gilda
 url: /portfolio/gilda
-order: 140
+order: 130
 thumb:
   url: https://ik.imagekit.io/garethweaver/thumb-gilda.jpg
 title: GILDA, Nexus Studios

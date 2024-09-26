@@ -1,7 +1,7 @@
 ---
 slug: sipa-beer
 url: /portfolio/sipa-beer
-order: 130
+order: 110
 thumb:
   url: https://ik.imagekit.io/garethweaver/thumb-sipa.jpg
 title: SIPA Beer
