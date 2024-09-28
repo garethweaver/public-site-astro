@@ -46,13 +46,13 @@ meta:
 A personal project to show team and league results from the In2Touch rugby
 leagues across the UK. The app allows you to find and pin teams and leagues to
 your homescreen with data fed from a Firebase backend. Users can also select
-themes and view results of other teams. A node script run from github actions
+themes and view results of other teams. A node script running from github actions
 scrapes data from the rather dated In2Touch website and saves it to a realtime
 Firebase database.
 
-The new frontend is built NextJs although tbh I ended up fighting it. Data is
-cached locally to reduce server load and speed up navigation. Firebase listens
-in realtime ready to update any cahced data. Currently the app isn't deployed
+The new frontend is built NextJs although to be honest I ended up fighting it.
+The user data is cached locally to reduce server load white Firebase listens
+in realtime ready to update any cached data. Currently the app isn't deployed
 to an app store but can be added to mobile homescreens and run as a webapp.
 
 You can find all the repositories here:
