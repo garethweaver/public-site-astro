@@ -4,6 +4,7 @@ url: /portfolio/sipa-beer
 order: 110
 thumb:
   url: https://ik.imagekit.io/garethweaver/thumb-sipa.jpg
+  gradient: 20
 title: SIPA Beer
 external: false
 type: Label Design
@@ -18,7 +19,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/sipa-sm.jpg
       height: 1000
       width: 600
-next_page: /gilda
+next_page: /headless-ghost
 meta:
   title: Gareth Weaver - SIPA Beer
   description: A rushed project for my brother to design a label for his first

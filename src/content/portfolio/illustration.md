@@ -23,7 +23,7 @@ images:
     alt: A cartoon robin saying happy xmas
     height: 700
     width: 900
-next_page: /cashbackcard
+next_page: /in2touch
 meta:
   title: Gareth Weaver - Illustration &amp; Doodles
   description: Here you can find some random illustrations, doodles and art

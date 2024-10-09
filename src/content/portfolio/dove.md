@@ -35,7 +35,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/dove-concept-adverts-3-sm.jpg
       height: 400
       width: 600
-next_page: /this-site
+next_page: /south-london-touch
 meta:
   title: Gareth Weaver - Dove Concept Advert Repository
   description: I led a project to create working prototype of an online repository

@@ -1,7 +1,7 @@
 ---
 slug: south-london-touch
 url: /portfolio/south-london-touch
-order: 100
+order: 30
 thumb:
   url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-sltrc.png
   gradient: 135
@@ -37,7 +37,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/south-london-touch-3-sm.jpg
       height: 540
       width: 600
-next_page: /stella-mccartney-tumblr
+next_page: /illustration
 meta:
   title: Gareth Weaver - South London Touch Rugby
   description: A personal project to re-design my social touch rugby club's logo

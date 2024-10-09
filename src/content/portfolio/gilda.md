@@ -19,7 +19,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/gilda-1-sm.jpg
       height: 3546
       width: 600
-next_page: /business-three-zero-fuel
+next_page: /maison-hanko
 meta:
   title: Gareth Weaver - GILDA, Nexus Studios
   description: A simple static brochure page to showcase Nexus’ latest augmented

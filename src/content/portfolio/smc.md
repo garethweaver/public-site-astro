@@ -9,7 +9,6 @@ external: false
 type: ES6 Application for Tumblr
 year: 2015
 tools: ES6, Tumlr, Sass
-live_site: http://stellamccartney.tumblr.com/
 images:
   - url: https://ik.imagekit.io/garethweaver/stella-mccartney-1-lg.jpg
     alt: Stella McCartney Tumblr website homepage
@@ -27,7 +26,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/stella-mccartney-2-sm.jpg
       height: 670
       width: 600
-next_page: /big-sofa
+next_page: /dove-concept-adverts
 meta:
   title: Gareth Weaver - Stella McCartney Tumlr
   description: I wrote a small ES6 app to be loaded externally from Tumblr to create

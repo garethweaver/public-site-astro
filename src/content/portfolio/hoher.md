@@ -20,7 +20,7 @@ images:
       name: https://ik.imagekit.io/garethweaver/hoher-1-sm.jpg
       height: 1668
       width: 600
-next_page: /south-london-touch
+next_page: /gilda
 meta:
   title: Gareth Weaver - Höher Backpacks
   description: I designed and built a small static site as a landing page for

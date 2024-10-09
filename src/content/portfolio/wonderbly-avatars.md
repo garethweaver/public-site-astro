@@ -27,7 +27,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/avatars-2-sm.jpg
       height: 900
       width: 600
-next_page: /in2touch
+next_page: /this-site
 meta:
   title: Gareth Weaver - Wonderbly Avatars
   description: A highly interactive react UI component to customise and create more unique avatars

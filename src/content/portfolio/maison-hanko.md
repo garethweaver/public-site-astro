@@ -1,7 +1,7 @@
 ---
 slug: maison-hanko
 url: /portfolio/maison-hanko
-order: 160
+order: 120
 thumb:
   url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-maison-hanko.png
   gradient: 135
@@ -28,7 +28,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/maison-hanko-2-sm.jpg
       height: 1400
       width: 600
-next_page: /sipa-beer
+next_page: /business-three-zero-fuel
 meta:
   title: Gareth Weaver - Maison Hanko
   description: A static site built with GatsbyJS to showcase top Japanese

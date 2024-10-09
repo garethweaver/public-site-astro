@@ -15,7 +15,7 @@ images:
     alt: St David's Osteopaths website homepage
     height: 1697
     width: 900
-next_page: /headless-ghost
+next_page: /stella-mccartney-tumblr
 meta:
   title: Gareth Weaver - St David's Osteopaths
   description: As a personal project for a friend I redesigned his osteopathy website

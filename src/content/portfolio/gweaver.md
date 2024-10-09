@@ -35,7 +35,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/gareth-weaver-1-sm.jpg
       height: 583
       width: 600
-next_page: /embedded-media-player
+next_page: /hoher-backpacks
 meta:
   title: Gareth Weaver - I built this with AstroJs and React
   description: I rebuilt my personal website in React using AstroJs and learnt

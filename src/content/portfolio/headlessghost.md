@@ -1,7 +1,7 @@
 ---
 slug: headless-ghost
 url: /portfolio/headless-ghost
-order: 30
+order: 100
 thumb:
   url: https://ik.imagekit.io/garethweaver/thumb-headless-ghost.jpg
 title: Headless Ghost
@@ -16,7 +16,7 @@ images:
     alt: Headless Ghost brochure website homepage design
     height: 3438
     width: 1200
-next_page: /dove-concept-adverts
+next_page: /sd-osteopaths
 meta:
   title: Gareth Weaver - Headless Ghost Kickstarter Design
   description: A simple one page promotional website for Headless Ghost Kickstarter.

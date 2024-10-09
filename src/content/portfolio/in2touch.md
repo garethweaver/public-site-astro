@@ -37,7 +37,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/in2touch-3-sm.jpg
       height: 1067
       width: 600
-next_page: /maison-hanko
+next_page: /wonderbly-avatars
 meta:
   title: Gareth Weaver - In2Touch App
   description: A personal project to show team and league results for the
