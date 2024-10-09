@@ -28,7 +28,8 @@ interface Props {
             <span class="pill">{meta}</span>
           ))}
           <span>
-            {job.date.from} - {job.date.to} - {job.date.duration}
+            {job.date.from} - {job.date.to}{" "}
+            {job.date.duration && `- ${job.date.duration}`}
           </span>
         </div>
         <div set:html={job.body} />

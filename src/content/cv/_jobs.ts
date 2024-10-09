@@ -4,12 +4,25 @@ interface JobList {
   date: {
     from: string
     to: string
-    duration: string
+    duration?: string
   }
   body: string
 }
 
 export const jobsList: JobList[] = [
+  {
+    title: "Upgrowth AU",
+    meta: [
+      "Senior Fullstack",
+      "Digital Agency",
+      "Next",
+    ],
+    date: {
+      from: 'OCT24',
+      to: 'NOW',
+    },
+    body: '<p>Joined as a senior fullstack engineer placed initally inside BigW working on their online ecomm store.<p>',
+  },
   {
     title: "Wonderbly",
     meta: [
