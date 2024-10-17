@@ -11,13 +11,13 @@ interface Props {
   {limit[0] === 0 &&
   <section>
     <h3 class="uni">
-      <span>
+      <span class="uoe">
         University of Exeter<br />
         BSc (Hons) Biological Sciences - 2:1
-        </span>
-        <span class="date">SEP06 - AUG09 - 3Y00M</span>
-        </h3>
-        </section>
+      </span>
+      <span class="date">SEP06 - AUG09 - 3Y00M</span>
+    </h3>
+  </section>
   }
   {
     jobsList.slice(...limit).map((job) => (
@@ -28,7 +28,8 @@ interface Props {
             <span class="pill">{meta}</span>
           ))}
           <span>
-            {job.date.from} - {job.date.to} - {job.date.duration}
+            {job.date.from} - {job.date.to}{" "}
+            {job.date.duration && `- ${job.date.duration}`}
           </span>
         </div>
         <div set:html={job.body} />
@@ -42,6 +43,9 @@ interface Props {
     display: flex
     align-items: flex-end
 
+  .uoe
+    color: var(--color-grad-primary)
+
   .uni .date
     margin-left: auto
     font-weight: normal
@@ -53,6 +57,9 @@ interface Props {
   .jobs :global(p)
     margin: 1rem 0 0
     font-size: 0.85em
+
+  .jobs :global(.pill)
+    font-size: 0.875rem
 
   .jobs h2
     margin: 0 0 0.5rem

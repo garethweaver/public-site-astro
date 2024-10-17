@@ -39,7 +39,7 @@ import JobsList from '@components/CV/JobsList.astro'
         <Header />
         <article class="cols">
           <aside>
-            <SkillsList limit={[0, 6]} />
+            <SkillsList limit={[0, 5]} />
           </aside>
           <JobsList limit={[0, 4]} />
         </article>
@@ -47,16 +47,16 @@ import JobsList from '@components/CV/JobsList.astro'
       <div class="page">
         <div class="cols">
           <aside>
-            <SkillsList limit={[6, 10]} interests />
+            <SkillsList limit={[5, 10]} interests />
           </aside>
-          <JobsList limit={[4, 11]} />
+          <JobsList limit={[4, 10]} />
         </div>
       </div>
       <div class="page">
         <div class="cols">
           <aside />
           <div>
-            <JobsList limit={[11, 14]} />
+            <JobsList limit={[10, 15]} />
             <ReferencesList />
           </div>
         </div>
@@ -126,6 +126,6 @@ import JobsList from '@components/CV/JobsList.astro'
 
   .cols
     display: grid
-    grid-template-columns: 20% 1fr
+    grid-template-columns: 11.5rem 1fr
     grid-column-gap: 3.5em
 </style>
