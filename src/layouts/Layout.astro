@@ -45,8 +45,8 @@ const { href } = Astro.url
 </html>
 
 <style lang="sass" is:global>
-  @import'../style/base'
-  @import'../style/variables'
+  @use '../style/base' as *
+  @use '../style/variables' as *
 
   *
     box-sizing: border-box
