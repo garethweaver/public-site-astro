@@ -10,7 +10,7 @@ export interface HaikuItem {
     title: string
     year: number
   }
-  body: string
+  body?: string
 }
 
 export async function getStaticPaths(

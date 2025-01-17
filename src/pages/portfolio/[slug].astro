@@ -16,7 +16,7 @@ export interface Props extends PortfolioItem {
 }
 
 export async function getStaticPaths() {
-  const items: Item[] = await Astro.glob('../../content/portfolio/*.md')
+  const items: Item[] = Object.values(import.meta.glob('../../content/portfolio/*.md', { eager: true }))
 
   return items
     .filter(item => !!item.frontmatter.slug)

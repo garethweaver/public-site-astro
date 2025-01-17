@@ -7,7 +7,7 @@ export interface PortfolioItem {
   body?: string
 }
 
-const items: PortfolioItem[] = await Astro.glob('../../content/portfolio/*.md')
+const items: PortfolioItem[] = Object.values(import.meta.glob('../../content/portfolio/*.md', { eager: true }))
 items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
 ---
 
