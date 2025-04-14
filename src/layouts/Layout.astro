@@ -1,5 +1,6 @@
 ---
 import 'normalize.css'
+import Analytics from '@vercel/analytics/astro'
 import Fonts from '@components/Fonts/Fonts.astro'
 import Header from '@components/Header/Header.astro'
 import Modal from '@components/Modal/Modal'
@@ -41,6 +42,7 @@ const { href } = Astro.url
     </main>
     <Footer />
     <Modal client:idle />
+    <Analytics />
   </body>
 </html>
 
