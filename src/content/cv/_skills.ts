@@ -8,13 +8,12 @@ export const skillsList: SkillList[] = [
     title: "Current Stack",
     skills: [
       "React",
+      "NextJs",
       "AstroJs",
       "GatsbyJs",
-      "NextJs",
-      "ES6",
       "Typescript",
       "CSS",
-      "HTML5",
+      "HTML",
       "Sass",
       "Express",
       "Pug"
@@ -47,6 +46,7 @@ export const skillsList: SkillList[] = [
   {
     title: "Testing",
     skills: [
+      "Vitest",
       "Jest",
       "Nightwatch",
       "Browserstack",
@@ -57,6 +57,7 @@ export const skillsList: SkillList[] = [
     title: "Infra/CI",
     skills: [
       "Github Actions",
+      "Gcloud",
       "Heroku",
       "Bugsnag",
       "Mezmo"
