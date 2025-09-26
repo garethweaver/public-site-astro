@@ -30,7 +30,7 @@ export interface Props {
   <div class="background" />
 </header>
 
-<script define:vars={{ lockedHeader: lockedHeader || false }}>
+<script is:inline define:vars={{ lockedHeader: lockedHeader || false }}>
   const header = document.querySelector('[data-header-root]')
   const toggle = document.querySelector('[data-menu-toggle]')
 
