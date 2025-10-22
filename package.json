@@ -20,7 +20,7 @@
     "@nanostores/react": "^1.0.0",
     "@types/react": "^19.2.2",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.14.7",
+    "astro": "^5.14.8",
     "nanostores": "^1.0.1",
     "normalize.css": "^8.0.1",
     "react": "^19.2.0",
