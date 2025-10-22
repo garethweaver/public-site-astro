@@ -4,6 +4,9 @@ import GitButton from '@components/GitButton/GitButton'
 ---
 
 <footer>
+  <div class="github-container">
+    <img src="https://ghchart.rshah.org/e799ba/garethweaver" alt="Gareth Weaver's GitHub contributions">
+  </div>
   <nav>
     <ul>
       <li>
@@ -53,4 +56,12 @@ import GitButton from '@components/GitButton/GitButton'
     :global(button)
       font-family: var(--font-family-heading)
       color: var(--color-href)
+
+  .github-container
+    overflow-x: auto
+    width: 100%
+    img
+      max-width: 20em
+      margin: 0 auto 2em;
+      display: block
 </style>
