@@ -20,18 +20,18 @@ const { href } = Astro.url
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48"/>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta property="og:image" content="https://ik.imagekit.io/garethweaver/ogimage.jpg"/>
-    <meta property="og:url" content={href}/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content={title}/>
-    <meta property="og:description" content={description}/>
+    <meta property="og:image" content="https://ik.imagekit.io/garethweaver/ogimage.jpg" />
+    <meta property="og:url" content={href} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <link rel="preconnect" href="https://ik.imagekit.io" />
     <Fonts />
   </head>
@@ -70,7 +70,7 @@ const { href } = Astro.url
     background: var(--color-bg)
     color: #ffffff
     font-family: var(--font-family-body)
-    font-weight: 300
+    font-weight: normal
     padding: 0 1em
     min-width: 330px
     +media-up(md)
@@ -82,7 +82,7 @@ const { href } = Astro.url
 
   h1, h2, h3, h4, h5, h6
     font-family: var(--font-family-heading)
-    font-weight: 800
+    font-weight: bold
 
   a
     color: var(--color-href)

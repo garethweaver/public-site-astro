@@ -1,7 +1,25 @@
----
-import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
----
+<style>
+  @font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("/fonts/inconsolata-400.ttf") format("truetype");
+  }
 
-<GoogleFontsOptimizer
-  url="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Ubuntu:wght@300&display=swap"
-/>
+  @font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url("/fonts/inconsolata-800.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("/fonts/ubuntu-300.ttf") format("truetype");
+  }
+</style>
