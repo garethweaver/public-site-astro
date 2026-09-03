@@ -1,19 +1,16 @@
-import { defineConfig } from 'astro/config';
-import prefetch from '@astrojs/prefetch';
+import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 
 export default defineConfig({
-  output: 'static',
-  site: 'https://www.garethweaver.com',
+  output: "static",
+  site: "https://www.garethweaver.com",
   compressHTML: true,
-  integrations: [
-    prefetch({
-      throttle: 3
-    }),
-    react(),
-  ],
+  integrations: [react()],
+  prefetch: {
+    throttle: 3,
+  },
   redirects: {
-    '/folio': '/portfolio',
-    '/folio/[slug]': '/portfolio/[slug]',
-  }
+    "/folio": "/portfolio",
+    "/folio/[slug]": "/portfolio/[slug]",
+  },
 });

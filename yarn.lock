@@ -202,15 +202,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/prefetch@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "@astrojs/prefetch@npm:0.4.1"
-  dependencies:
-    throttles: "npm:^1.0.1"
-  checksum: 10c0/03ad239dcbf9df7da3ef2c5ba48fda0a27aa900a9dedb01f6d1294a34d746bfbab56dcff3a1be0f7fcdc83b3085cd9fd96c4af2a10b556c1533f4c069d783a3b
-  languageName: node
-  linkType: hard
-
 "@astrojs/prism@npm:4.0.2":
   version: 4.0.2
   resolution: "@astrojs/prism@npm:4.0.2"
@@ -929,7 +920,6 @@ __metadata:
   resolution: "@garethweaver/public-site-astro@workspace:."
   dependencies:
     "@astrojs/check": "npm:^0.9.10"
-    "@astrojs/prefetch": "npm:^0.4.1"
     "@astrojs/react": "npm:^6.0.4"
     "@nanostores/react": "npm:^1.1.0"
     "@types/react": "npm:^19.2.18"
@@ -941,7 +931,6 @@ __metadata:
     react-dom: "npm:^19.2.8"
     sass: "npm:^1.102.0"
     typescript: "npm:^6.0.3"
-    zod: "npm:4.3.6"
   languageName: unknown
   linkType: soft
 
@@ -4110,13 +4099,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"throttles@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "throttles@npm:1.0.1"
-  checksum: 10c0/a9427aa198473d0edc50d58ffddc832bf68144661e8a0e87d58800d77d988e35a07eccfb5668180f0147929f009d51f39a5eac3ea3b0ad6fb74213fbc981a4b4
-  languageName: node
-  linkType: hard
-
 "tiny-inflate@npm:^1.0.3":
   version: 1.0.3
   resolution: "tiny-inflate@npm:1.0.3"
@@ -4890,7 +4872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:4.3.6, zod@npm:^4.3.6":
+"zod@npm:^4.3.6":
   version: 4.3.6
   resolution: "zod@npm:4.3.6"
   checksum: 10c0/860d25a81ab41d33aa25f8d0d07b091a04acb426e605f396227a796e9e800c44723ed96d0f53a512b57be3d1520f45bf69c0cb3b378a232a00787a2609625307
