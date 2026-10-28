@@ -17,7 +17,7 @@ export const jobsList: JobList[] = [
       from: "OCT24",
       to: "NOW",
     },
-    body: "<p>Joined as a senior fullstack engineer placed inside BigW working on their online ecomm store. Responsible for the development of features within the BigW storefront NextJS application and pipeline that is used by half a million Australians every day.<p>",
+    body: '<p>Joined as a senior fullstack engineer placed inside <a href="https://www.bigw.com.au/" target="_blank">BigW</a> working on their online ecomm store. Responsible for the development of features within the BigW storefront NextJS application, mobile app, APIs and pipelines used by half a million Australians every day.<p><p>Worked within an Upgrowth engineering team on launch the greenfield <a href="https://www.veme.me/" target="_blank">Veme</a> webapp.</p>',
   },
   {
     title: "Wonderbly",

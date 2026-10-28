@@ -10,14 +10,13 @@ export const skillsList: SkillList[] = [
       "React",
       "NextJs",
       "AstroJs",
-      "GatsbyJs",
       "Typescript",
       "CSS",
       "HTML",
       "Sass",
       "Express",
-      "Pug"
-    ]
+      "NestJs",
+    ],
   },
   {
     title: "People",
@@ -28,30 +27,16 @@ export const skillsList: SkillList[] = [
       "Public Speaking",
       "Diversity in Tech",
       "Scrum",
-      "Agile"
-    ]
+      "Agile",
+    ],
   },
   {
     title: "Tooling",
-    skills: [
-      "Turborepo",
-      "Webpack",
-      "Vite",
-      "Docker",
-      "Pnpm",
-      "Yarn",
-      "Npm"
-    ]
+    skills: ["Turborepo", "Webpack", "Vite", "Docker", "Pnpm", "Yarn", "Npm"],
   },
   {
     title: "Testing",
-    skills: [
-      "Vitest",
-      "Jest",
-      "Nightwatch",
-      "Browserstack",
-      "Cypress"
-    ]
+    skills: ["Vitest", "Jest", "Nightwatch", "Browserstack", "Cypress"],
   },
   {
     title: "Infra/CI",
@@ -59,27 +44,19 @@ export const skillsList: SkillList[] = [
       "Github Actions",
       "Gcloud",
       "Heroku",
+      "Azure Devops",
       "Bugsnag",
-      "Mezmo"
-    ]
+      "Mezmo",
+      "Dynatrace",
+    ],
   },
   {
     title: "3rd Party",
-    skills: [
-      "Algolia",
-      "Optimizely",
-      "GTM"
-    ]
+    skills: ["Algolia", "Optimizely", "GTM", "Insider"],
   },
   {
     title: "CMS/API",
-    skills: [
-      "Contentful",
-      "Prismic",
-      "Firebase",
-      "GraphQL",
-      "REST"
-    ]
+    skills: ["Contentful", "Prismic", "Firebase", "GraphQL", "REST"],
   },
   {
     title: "Public Speaking",
@@ -87,7 +64,7 @@ export const skillsList: SkillList[] = [
       "London City School for Girls",
       "University College London",
       "Codebar",
-    ]
+    ],
   },
   {
     title: "Past Stacks",
@@ -95,12 +72,14 @@ export const skillsList: SkillList[] = [
       "AngularJs",
       "VueJs",
       "Nuxt",
+      "GatsbyJs",
       "jQuery",
       "Middleman",
       "CoffeeScript",
       "Haml",
+      "Pug",
       "PHP",
       "Rails",
-    ]
-  }
-]
+    ],
+  },
+];
