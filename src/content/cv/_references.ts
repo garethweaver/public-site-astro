@@ -7,6 +7,12 @@ interface Reference {
 
 export const referenceList: Reference[] = [
   {
+    name: 'Dale Emrose',
+    role: 'Lead',
+    email: 'dale@upgrowth.com.au',
+    company: 'Upgrowth',
+  },
+  {
     name: 'Rob Watts',
     role: 'CTO',
     email: 'robw@wonderbly.com',
@@ -29,11 +35,5 @@ export const referenceList: Reference[] = [
     role: 'Tech Lead',
     email: 'nick.scott@kortical.com',
     company: 'Kortical',
-  },
-  {
-    name: 'Joe Smalley',
-    role: 'Tech Lead',
-    email: 'joesmalley.com',
-    company: 'Breakthrough Media',
   },
 ]
