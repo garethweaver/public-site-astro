@@ -30,31 +30,31 @@ import GitButton from '@components/GitButton/GitButton'
 </ul>
 
 <style lang="sass">
-  @use '../../style/base' as *
+@use '../../style/base' as *
 
-  ul
-    list-style: none
-    margin: 0
-    padding: 1em 0 0
+ul
+  list-style: none
+  margin: 0
+  padding: 1em 0 0
+  +media-up(md)
+    padding: 0
+    display: flex
+
+  li
     +media-up(md)
-      padding: 0
-      display: flex
+      margin-left: 0.75em
 
-    li
-      +media-up(md)
-        margin-left: 0.75em
+  :global(.link)
+    transition: color 0.3s
+    color: white
+    display: flex
+    align-items: center
+    +media-down(sm)
+      padding: 0.5em 0
+      width: 100%
 
-    :global(.link)
-      transition: color 0.3s
-      color: white
-      display: flex
-      align-items: center
-      +media-down(sm)
-        padding: 0.5em 0
-        width: 100%
-
-    :global(span)
-      margin-left: 0.5em
-      +media-up(md)
-        display: none
+  :global(span)
+    margin-left: 0.5em
+    +media-up(md)
+      display: none
 </style>

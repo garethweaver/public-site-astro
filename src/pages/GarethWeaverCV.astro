@@ -66,65 +66,65 @@ import JobsList from '@components/CV/JobsList.astro'
 </html>
 
 <style lang="sass" is:global>
-  @use '../style/variables' as *
+@use '../style/variables' as *
 
-  html
-    font-size: 12px
-    @media screen
-      min-width: 220mm
+html
+  font-size: 12px
+  @media screen
+    min-width: 220mm
 
-  *::selection
-    background: rgba(var(--color-highlight-rgb), 0.9)
-    color: black
+*::selection
+  background: rgba(var(--color-highlight-rgb), 0.9)
+  color: black
 
-  *
-    box-sizing: border-box
+*
+  box-sizing: border-box
 
-  a
-    color: var(--color-grad-primary)
+a
+  color: var(--color-grad-primary)
 
-  @page
-    margin: 0
-    size: A4
+@page
+  margin: 0
+  size: A4
 
-  body
-    font-family: var(--font-family-body)
-    font-weight: normal
-    padding: 0
-    margin: 0
-    line-height: 1.4
-    @media screen
-      background: var(--color-bg)
-      padding: 7rem 0 4rem
+body
+  font-family: var(--font-family-body)
+  font-weight: normal
+  padding: 0
+  margin: 0
+  line-height: 1.4
+  @media screen
+    background: var(--color-bg)
+    padding: 7rem 0 4rem
 
-  .page
-    background: white
-    width: 210mm
-    max-width: 210mm
-    height: 297mm
-    max-height: 297mm
-    padding: 4em
-    @media screen
-      margin: 1em auto
-      border-radius: 0.5em
-      overflow: hidden
+.page
+  background: white
+  width: 210mm
+  max-width: 210mm
+  height: 297mm
+  max-height: 297mm
+  padding: 4em
+  @media screen
+    margin: 1em auto
+    border-radius: 0.5em
+    overflow: hidden
 
-  h1, h2, h3, h4, h5, h6
-    margin-top: 0
-    font-family: var(--font-family-heading)
-    font-weight: bold
-    line-height: 1.2
+h1, h2, h3, h4, h5, h6
+  margin-top: 0
+  font-family: var(--font-family-heading)
+  font-weight: bold
+  line-height: 1.2
 
-  .pill
-    display: inline-block
-    color: var(--color-fg)
-    margin-right: 5px
-    padding: 0.25em
-    border-radius: 3px
-    border: 1px solid var(--color-fg)
+.pill
+  display: inline-block
+  color: var(--color-fg)
+  margin-right: 5px
+  padding: 0.25em
+  border-radius: 3px
+  border: 1px solid var(--color-fg)
 
-  .cols
-    display: grid
-    grid-template-columns: 11.5rem 1fr
-    grid-column-gap: 3.5em
+.cols
+  display: grid
+  grid-template-columns: 11.5rem 1fr
+  grid-column-gap: 3.5em
 </style>

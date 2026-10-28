@@ -41,27 +41,27 @@ items.sort((a, b) => b.frontmatter.order - a.frontmatter.order)
 </nav>
 
 <style lang="sass">
-  @use '../../style/base' as *
+@use '../../style/base' as *
 
-  ul
-    max-width: var(--max-width)
-    margin: 0 auto
-    list-style: none
-    padding: 0
-    border-radius: 0.5em
-    overflow: hidden
-    margin-top: 1em
-    background: var(--color-grad-primary)
-    +media-up(sm)
-      display: grid
-      margin-top: 2em
-      grid-template-columns: repeat(2, 1fr)
+ul
+  max-width: var(--max-width)
+  margin: 0 auto
+  list-style: none
+  padding: 0
+  border-radius: 0.5em
+  overflow: hidden
+  margin-top: 1em
+  background: var(--color-grad-primary)
+  +media-up(sm)
+    display: grid
+    margin-top: 2em
+    grid-template-columns: repeat(2, 1fr)
 
-    +media-up(md)
-      grid-template-columns: repeat(3, 1fr)
+  +media-up(md)
+    grid-template-columns: repeat(3, 1fr)
 
-  a
-    display: block
-    background: rgba(0, 0, 0, 0.2)
-    display: block
+a
+  display: block
+  background: rgba(0, 0, 0, 0.2)
+  display: block
 </style>

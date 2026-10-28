@@ -47,48 +47,48 @@ const { href } = Astro.url
 </html>
 
 <style lang="sass" is:global>
-  @use '../style/base' as *
-  @use '../style/variables' as *
+@use '../style/base' as *
+@use '../style/variables' as *
 
-  *
-    box-sizing: border-box
-    -webkit-tap-highlight-color: rgba(var(--color-highlight-rgb), 0.5)
-    interpolate-size: allow-keywords
-    &:focus
-      outline: 1px solid rgba(255, 255, 255, 0.5)
+*
+  box-sizing: border-box
+  -webkit-tap-highlight-color: rgba(var(--color-highlight-rgb), 0.5)
+  interpolate-size: allow-keywords
+  &:focus
+    outline: 1px solid rgba(255, 255, 255, 0.5)
 
-  html
-    font-size: 18px
-    +media-up(lg)
-      font-size: 22px
+html
+  font-size: 18px
+  +media-up(lg)
+    font-size: 22px
 
-  *::selection
-    background: rgba(var(--color-highlight-rgb), 0.9)
-    color: black
+*::selection
+  background: rgba(var(--color-highlight-rgb), 0.9)
+  color: black
 
-  body
-    background: var(--color-bg)
-    color: #ffffff
-    font-family: var(--font-family-body)
-    font-weight: normal
-    padding: 0 1em
-    min-width: 330px
-    +media-up(md)
-      padding: 0 2em
+body
+  background: var(--color-bg)
+  color: #ffffff
+  font-family: var(--font-family-body)
+  font-weight: normal
+  padding: 0 1em
+  min-width: 330px
+  +media-up(md)
+    padding: 0 2em
 
-  main
-    +media-up(md)
-      padding-top: 2em
+main
+  +media-up(md)
+    padding-top: 2em
 
-  h1, h2, h3, h4, h5, h6
-    font-family: var(--font-family-heading)
-    font-weight: bold
+h1, h2, h3, h4, h5, h6
+  font-family: var(--font-family-heading)
+  font-weight: bold
 
-  a
-    color: var(--color-href)
-    font-family: var(--font-family-heading)
-    text-decoration: none
+a
+  color: var(--color-href)
+  font-family: var(--font-family-heading)
+  text-decoration: none
 
-  .no-scroll
-    overflow: hidden
+.no-scroll
+  overflow: hidden
 </style>

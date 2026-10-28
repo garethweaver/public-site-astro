@@ -52,33 +52,33 @@ const { page } : { page: Page } = Astro.props
 </Layout>
 
 <style lang="sass">
-  @use '../../style/base' as *
+@use '../../style/base' as *
 
-  .HaikuWrap
-    background: var(--color-fg)
-    max-width: var(--max-width)
-    margin: 0 auto
-    padding: 2em 1em
-    border-radius: 0.5em
-    +media-up(md)
-      padding: 2em
+.HaikuWrap
+  background: var(--color-fg)
+  max-width: var(--max-width)
+  margin: 0 auto
+  padding: 2em 1em
+  border-radius: 0.5em
+  +media-up(md)
+    padding: 2em
 
-  .inner
-    margin: 0 auto
-    max-width: var(--max-content-width)
-    padding-top: 2em
-    +media-down(md)
-      &.no-padd
-        padding-top: 0
-    +media-up(md)
-      padding-top: 8rem
+.inner
+  margin: 0 auto
+  max-width: var(--max-content-width)
+  padding-top: 2em
+  +media-down(md)
+    &.no-padd
+      padding-top: 0
+  +media-up(md)
+    padding-top: 8rem
 
-  .intro
-    line-height: 1.5
-    margin-bottom: 5em
-    +media-up(md)
-      margin-bottom: 6em
+.intro
+  line-height: 1.5
+  margin-bottom: 5em
+  +media-up(md)
+    margin-bottom: 6em
 
-  h1
-    margin-top: 0
+h1
+  margin-top: 0
 </style>
