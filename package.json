@@ -11,7 +11,8 @@
     "astro": "astro",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "postinstall": "husky"
   },
   "engines": {
     "node": "24"
@@ -30,6 +31,7 @@
     "@astrojs/check": "^0.9.10",
     "@biomejs/biome": "2.5.15",
     "@types/react": "^19.2.18",
+    "husky": "9.1.7",
     "sass": "^1.105.1",
     "typescript": "^6.0.3"
   },

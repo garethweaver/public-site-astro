@@ -1,0 +1,7 @@
+if [ -f ~/.nvm/nvm.sh ]; then
+  . ~/.nvm/nvm.sh
+  nvm use
+fi
+
+yarn lint:fix --staged --no-errors-on-unmatched
+git update-index --again
