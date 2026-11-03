@@ -1,7 +1,9 @@
 ---
-import Layout from '@layouts/Layout.astro'
-import PortolioDetail, { type Props as PortfolioItem } from '@components/Portfolio/PortfolioDetail.astro'
+import PortolioDetail, {
+  type Props as PortfolioItem,
+} from '@components/Portfolio/PortfolioDetail.astro'
 import PortfolioList from '@components/Portfolio/PortfolioList.astro'
+import Layout from '@layouts/Layout.astro'
 
 interface Item {
   frontmatter: PortfolioItem
@@ -16,7 +18,9 @@ export interface Props extends PortfolioItem {
 }
 
 export async function getStaticPaths() {
-  const items: Item[] = Object.values(import.meta.glob('../../content/portfolio/*.md', { eager: true }))
+  const items: Item[] = Object.values(
+    import.meta.glob('../../content/portfolio/*.md', { eager: true }),
+  )
 
   return items
     .filter(item => !!item.frontmatter.slug)
@@ -25,7 +29,7 @@ export async function getStaticPaths() {
         params: { slug: item.frontmatter.slug },
         props: { ...item.frontmatter, body: item.compiledContent() },
       }
-  })
+    })
 }
 
 const { meta, ...rest } = Astro.props

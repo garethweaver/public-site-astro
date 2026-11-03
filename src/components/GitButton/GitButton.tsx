@@ -1,10 +1,10 @@
-import type { ReactElement } from 'react'
 import { isModalOpen } from '@stores/modalStore'
+import type { ReactElement } from 'react'
 import styles from './GitButton.module.sass'
 
 export default (props: {
-  className?: string,
-  children: ReactElement | ReactElement[] | string,
+  className?: string
+  children: ReactElement | ReactElement[] | string
 }) => {
   const handleClick = (): void => {
     // hide mobile menu with vanilla JS as it is not a react component
@@ -16,13 +16,12 @@ export default (props: {
   return (
     <button
       className={
-        props.className
-          ? `${props.className} ${styles.button}`
-          : styles.button
+        props.className ? `${props.className} ${styles.button}` : styles.button
       }
       onClick={handleClick}
       aria-label="Open Github modal"
-      title="Open Github modal">
+      title="Open Github modal"
+    >
       {props.children}
     </button>
   )

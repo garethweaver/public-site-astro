@@ -7,27 +7,35 @@ export default ({ userData }: { userData: UserData }) => (
       <a
         target="_blank"
         className={styles.link}
-        href={userData.url}>
+        href={userData.url}
+        rel="noopener"
+      >
         <img
           width="120"
           height="120"
           className={styles.avatar}
           src={userData.avatarUrl}
-          alt={`${userData.name} github profile avatar`} />
-          <h2 className={styles.name}>@{userData.login}</h2>
-        </a>
-        <p>{Math.floor((Date.parse(new Date().toString()) - Date.parse(new Date(userData.createdAt).toString())) / 86400000)} days on Github</p>
-        <p>{userData.repositories.totalCount} public repositories</p>
-        <p>{userData.repositories.totalDiskUsage} bytes of code</p>
+          alt={`${userData.name} github profile avatar`}
+        />
+        <h2 className={styles.name}>@{userData.login}</h2>
+      </a>
+      <p>
+        {Math.floor(
+          (Date.parse(new Date().toString()) -
+            Date.parse(new Date(userData.createdAt).toString())) /
+            86400000,
+        )}{' '}
+        days on Github
+      </p>
+      <p>{userData.repositories.totalCount} public repositories</p>
+      <p>{userData.repositories.totalDiskUsage} bytes of code</p>
     </div>
     <div className={styles.repos}>
       <h4>Recent repositories</h4>
       <ul>
         {userData.repositories.nodes.reverse().map(repo => (
           <li key={repo.name}>
-            <a
-              target="_blank"
-              href={repo.url}>
+            <a target="_blank" href={repo.url} rel="noopener">
               {repo.name}
             </a>
           </li>

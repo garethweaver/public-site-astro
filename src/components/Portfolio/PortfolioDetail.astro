@@ -1,8 +1,19 @@
 ---
 import PortfolioFooter from './PortfolioFooter.astro'
-import PortfolioInfo from './PortfolioInfo.astro'
 import PortfolioImages, { type PortfolioImage } from './PortfolioImages.astro'
-const { title, body, type, tools, year, images, live_site, repository, next_page } = Astro.props
+import PortfolioInfo from './PortfolioInfo.astro'
+
+const {
+  title,
+  body,
+  type,
+  tools,
+  year,
+  images,
+  live_site,
+  repository,
+  next_page,
+} = Astro.props
 
 export interface Props {
   title: string

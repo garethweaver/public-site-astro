@@ -1,17 +1,17 @@
-import { defineCollection } from "astro:content";
-import { z } from "astro/zod";
-import { glob } from "astro/loaders";
+import { defineCollection } from 'astro:content'
+import { glob } from 'astro/loaders'
+import { z } from 'astro/zod'
 
 const haikusCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/haikus" }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/haikus' }),
   schema: z.object({
     title: z.string(),
     year: z.number(),
   }),
-});
+})
 
 const portfolioCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/portfolio" }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/portfolio' }),
   schema: z.object({
     slug: z.string().optional(),
     url: z.string(),
@@ -45,9 +45,9 @@ const portfolioCollection = defineCollection({
       )
       .optional(),
   }),
-});
+})
 
 export const collections = {
   haikus: haikusCollection,
   portfolio: portfolioCollection,
-};
+}

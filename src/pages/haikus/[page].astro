@@ -1,9 +1,9 @@
 ---
-import Layout from '@layouts/Layout.astro'
-import HaikuDetail from '@components/Haikus/HaikuDetail.astro'
 import { getCollection } from 'astro:content'
-import type { Page, GetStaticPathsOptions } from 'astro'
+import HaikuDetail from '@components/Haikus/HaikuDetail.astro'
 import Pagination from '@components/Pagination/Pagination.astro'
+import Layout from '@layouts/Layout.astro'
+import type { GetStaticPathsOptions, Page } from 'astro'
 
 export interface HaikuItem {
   data: {
@@ -13,15 +13,13 @@ export interface HaikuItem {
   body?: string
 }
 
-export async function getStaticPaths(
-  { paginate } : GetStaticPathsOptions
-) {
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   let items: HaikuItem[] = await getCollection('haikus')
   items = items.sort((a: HaikuItem, b: HaikuItem) => b.data.year - a.data.year)
   return paginate(items, { pageSize: 6 })
 }
 
-const { page } : { page: Page } = Astro.props
+const { page }: { page: Page } = Astro.props
 ---
 
 <Layout

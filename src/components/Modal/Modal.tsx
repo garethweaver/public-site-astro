@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef } from 'react'
 import { useStore } from '@nanostores/react'
 import { isModalOpen } from '@stores/modalStore'
-import ModalContent from './ModalContent'
-import type { UserData, GitProfileApiResponse } from './Modal.types'
+import { useEffect, useRef, useState } from 'react'
 import styles from './Modal.module.sass'
+import type { GitProfileApiResponse, UserData } from './Modal.types'
+import ModalContent from './ModalContent'
 
 export default () => {
   const $isModalOpen: boolean = useStore(isModalOpen)
@@ -23,7 +23,7 @@ export default () => {
     if (dialog.current) dialog.current.close()
   }
 
-  useEffect((): () => void => {
+  useEffect((): (() => void) => {
     if ($isModalOpen) {
       document.body.classList.add('no-scroll')
       if (dialog.current) dialog.current.showModal()
@@ -32,7 +32,7 @@ export default () => {
         const json: GitProfileApiResponse = await response.json()
         setUserData(json?.data?.user)
       }
-      fetchData().catch((error) => {
+      fetchData().catch(error => {
         setHasErrored(true)
         console.error(error)
       })
@@ -44,34 +44,28 @@ export default () => {
   }, [$isModalOpen])
 
   return (
-    <dialog
-      ref={dialog}
-      className={styles.modal}>
+    <dialog ref={dialog} className={styles.modal}>
       <div className={styles.inner}>
-        <button
-          className={styles.close}
-          onClick={() => isModalOpen.set(false)}>
+        <button className={styles.close} onClick={() => isModalOpen.set(false)}>
           <svg height="24" width="24">
             <use href={`/icons/cross.svg#icon`} />
           </svg>
         </button>
-        {!hasErrored && userData &&
-          <ModalContent userData={userData} />
-        }
-        {!hasErrored && !userData &&
+        {!hasErrored && userData && <ModalContent userData={userData} />}
+        {!hasErrored && !userData && (
           <div className={styles.loader}>
             <svg height="24" width="24">
               <use href={`/icons/github.svg#icon`} />
             </svg>
           </div>
-        }
-        {hasErrored &&
+        )}
+        {hasErrored && (
           <div className={styles.loader}>
             <svg height="24" width="24">
               <use href={`/icons/cross.svg#icon`} />
             </svg>
           </div>
-        }
+        )}
       </div>
     </dialog>
   )
