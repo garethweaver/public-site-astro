@@ -11,19 +11,19 @@ export default () => {
   const [hasErrored, setHasErrored] = useState<boolean>(false)
   const dialog = useRef<HTMLDialogElement>(null)
 
-  const closeFromKeyDown = (e: KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      isModalOpen.set(false)
-      closeModal()
-    }
-  }
-
-  const closeModal = () => {
-    document.body.classList.remove('no-scroll')
-    if (dialog.current) dialog.current.close()
-  }
-
   useEffect((): (() => void) => {
+    const closeModal = () => {
+      document.body.classList.remove('no-scroll')
+      if (dialog.current) dialog.current.close()
+    }
+
+    const closeFromKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        isModalOpen.set(false)
+        closeModal()
+      }
+    }
+
     if ($isModalOpen) {
       document.body.classList.add('no-scroll')
       if (dialog.current) dialog.current.showModal()
@@ -46,22 +46,37 @@ export default () => {
   return (
     <dialog ref={dialog} className={styles.modal}>
       <div className={styles.inner}>
-        <button className={styles.close} onClick={() => isModalOpen.set(false)}>
-          <svg height="24" width="24">
+        <button
+          type="button"
+          className={styles.close}
+          onClick={() => isModalOpen.set(false)}
+          aria-label="Close"
+        >
+          <svg height="24" width="24" aria-hidden="true">
             <use href={`/icons/cross.svg#icon`} />
           </svg>
         </button>
         {!hasErrored && userData && <ModalContent userData={userData} />}
         {!hasErrored && !userData && (
           <div className={styles.loader}>
-            <svg height="24" width="24">
+            <svg
+              height="24"
+              width="24"
+              role="img"
+              aria-label="Loading GitHub profile"
+            >
               <use href={`/icons/github.svg#icon`} />
             </svg>
           </div>
         )}
         {hasErrored && (
           <div className={styles.loader}>
-            <svg height="24" width="24">
+            <svg
+              height="24"
+              width="24"
+              role="img"
+              aria-label="Failed to load GitHub profile"
+            >
               <use href={`/icons/cross.svg#icon`} />
             </svg>
           </div>

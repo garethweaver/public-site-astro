@@ -15,6 +15,7 @@ export default (props: {
   }
   return (
     <button
+      type="button"
       className={
         props.className ? `${props.className} ${styles.button}` : styles.button
       }
