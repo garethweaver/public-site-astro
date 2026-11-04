@@ -1,0 +1,9 @@
+# Only install package versions that have been published for at least 2 weeks
+# (carried over from Yarn's npmMinimalAgeGate: 2w). Value is in minutes.
+minimumReleaseAge: 20160
+
+# Dependencies allowed to run install scripts.
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: true
+  sharp: true

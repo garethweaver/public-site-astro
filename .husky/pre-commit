@@ -3,5 +3,5 @@ if [ -f ~/.nvm/nvm.sh ]; then
   nvm use
 fi
 
-yarn lint:fix --staged --no-errors-on-unmatched
+pnpm lint:fix --staged --no-errors-on-unmatched
 git update-index --again
