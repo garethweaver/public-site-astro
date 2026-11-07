@@ -3,7 +3,7 @@ slug: hoher-backpacks
 url: /portfolio/hoher-backpacks
 order: 140
 thumb:
-  url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-hoher.png
+  url: https://ik.imagekit.io/garethweaver/thumb-hoher.png
   gradient: 135
 title: Höher Backpacks
 external: false

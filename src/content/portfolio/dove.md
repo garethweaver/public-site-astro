@@ -3,7 +3,7 @@ slug: dove-concept-adverts
 url: /portfolio/dove-concept-adverts
 order: 50
 thumb:
-  url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-dove.png
+  url: https://ik.imagekit.io/garethweaver/thumb-dove.png
   gradient: 135
 title: Dove Concept Advert Repository
 external: false

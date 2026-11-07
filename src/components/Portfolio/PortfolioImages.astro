@@ -1,4 +1,6 @@
 ---
+import { imagekit } from '../../utils/imagekit'
+
 const { images } = Astro.props
 
 interface Image {
@@ -16,6 +18,17 @@ export interface PortfolioImage extends Image {
 export interface Props {
   images: PortfolioImage[]
 }
+
+// Images render inside .inner (max 900px wide, 1em padding on mobile).
+// Candidates cover 1x–2x of that, never upscaling past the original width.
+const WIDTHS = [480, 720, 900, 1200, 1800]
+const SIZES = '(min-width: 932px) 900px, calc(100vw - 2em)'
+
+const srcset = ({ url, width }: Image) => {
+  const widths = WIDTHS.filter(w => w < width)
+  if (width <= WIDTHS[WIDTHS.length - 1]) widths.push(width)
+  return widths.map(w => `${imagekit(url, [`w-${w}`])} ${w}w`).join(', ')
+}
 ---
 
 <>
@@ -23,14 +36,16 @@ export interface Props {
     <picture>
       {image.mobile && (
         <source
-          srcset={image.mobile.url}
+          srcset={imagekit(image.mobile.url)}
           media="(max-width: 576px)"
           height={image.mobile.height}
           width={image.mobile.width} />
       )}
       <img
         loading="lazy"
-        src={image.url}
+        src={imagekit(image.url)}
+        srcset={image.mobile ? undefined : srcset(image)}
+        sizes={image.mobile ? undefined : SIZES}
         alt={image.alt}
         height={image.height}
         width={image.width} />

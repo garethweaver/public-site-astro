@@ -1,8 +1,8 @@
 ---
 url: https://www.garethweaver.com/GarethWeaverCV
-order: 160
+order: 185
 thumb:
-  url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-cv.png
+  url: https://ik.imagekit.io/garethweaver/thumb-cv.png
   gradient: 150
 title: View my CV
 external: true
