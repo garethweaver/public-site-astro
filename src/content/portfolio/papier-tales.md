@@ -3,32 +3,24 @@ slug: papier-tales
 url: /portfolio/papier-tales
 order: 190
 thumb:
-  url: https://placehold.co/600x400/png?text=Papier+Tales
+  url: https://ik.imagekit.io/garethweaver/papier-tales-thumb.jpg
   gradient: 135
 title: Papier Tales
 external: false
-type: Print Service
+type: Bespoke Print Service
 year: 2026
-tools: Turborepo, Astro, Google Cloud Run
+tools: Turborepo, AstroJs, Google Cloud Run
 live_site: https://www.papiertales.com/
 images:
-  - url: https://placehold.co/1200x800/png?text=Papier+Tales+1
-    alt: Placeholder image for Papier Tales
-    height: 800
-    width: 1200
-    mobile:
-      url: https://placehold.co/600x400/png?text=Papier+Tales+1
-      height: 400
-      width: 600
-  - url: https://placehold.co/1200x800/png?text=Papier+Tales+2
-    alt: Placeholder image for Papier Tales
-    height: 800
-    width: 1200
-    mobile:
-      url: https://placehold.co/600x400/png?text=Papier+Tales+2
-      height: 400
-      width: 600
-next_page: /in2touch
+  - url: https://ik.imagekit.io/garethweaver/papier-tales-1.jpg
+    alt: Papier tales dashboard
+    height: 1381
+    width: 2400
+  - url: https://ik.imagekit.io/garethweaver/papier-tales-2.jpg
+    alt: Printed copies of papier tales books
+    height: 2400
+    width: 2400
+next_page: /sdo-google-reviews
 meta:
   title: Gareth Weaver - Papier Tales
   description: A bespoke book binding service that turns JSON payloads into
@@ -38,6 +30,7 @@ A bespoke book binding service that takes JSON payloads and outputs print
 quality PDFs. Books are templated in YAML, combining assets and text to output
 customised products for each order.
 
-The project is structured as a Turborepo monorepo with an Astro frontend, while
-the PDF rendering runs as Google Cloud Run jobs so each book can be generated
-on demand and scaled independently of the rest of the site.
+The project is structured as a Turborepo monorepo with an AstroJs frontend, while
+the PDF rendering and print house uploads run as Google Cloud Run jobs. Each book
+can be generated on demand with a configuration of assets, character names, and
+in different size formats.

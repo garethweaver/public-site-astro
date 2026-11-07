@@ -16,7 +16,7 @@ images:
     alt: Headless Ghost brochure website homepage design
     height: 3438
     width: 1200
-next_page: /sd-osteopaths
+next_page: /stella-mccartney-tumblr
 meta:
   title: Gareth Weaver - Headless Ghost Kickstarter Design
   description: A simple one page promotional website for Headless Ghost Kickstarter.

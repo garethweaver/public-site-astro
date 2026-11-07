@@ -3,7 +3,7 @@ slug: illustration
 url: /portfolio/illustration
 order: -30
 thumb:
-  url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-illustration.png
+  url: https://ik.imagekit.io/garethweaver/thumb-illustration.png
   gradient: 190
 title: Illustrations
 external: false
@@ -23,7 +23,7 @@ images:
     alt: A cartoon robin saying happy xmas
     height: 700
     width: 900
-next_page: /papier-tales
+next_page: /in2touch
 meta:
   title: Gareth Weaver - Illustration &amp; Doodles
   description: Here you can find some random illustrations, doodles and art

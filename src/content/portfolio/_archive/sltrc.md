@@ -3,7 +3,7 @@ slug: south-london-touch
 url: /portfolio/south-london-touch
 order: 30
 thumb:
-  url: https://ik.imagekit.io/garethweaver/tr:f-auto/thumb-sltrc.png
+  url: https://ik.imagekit.io/garethweaver/thumb-sltrc.png
   gradient: 135
 title: South London Touch Rugby
 external: false
