@@ -15,7 +15,8 @@ export const jobsList: JobList[] = [
     meta: ['Senior Fullstack', 'Digital Agency', 'Next'],
     date: {
       from: 'OCT24',
-      to: 'DEC26',
+      to: 'NOV26',
+      duration: '2Y01M',
     },
     body: '<p>Joined as a senior fullstack engineer placed inside <a href="https://www.bigw.com.au/" target="_blank" >BigW</a> working on their online ecomm store. Responsible for the development of features within the BigW storefront NextJS application, mobile app, APIs and pipelines used by half a million Australians every day.</p><p>Worked within an Upgrowth engineering team to launch the greenfield <a href="https://www.veme.me/" target="_blank">Veme</a> webapp built in NextJs.</p><p>Created a bespoke book binding service for <a href="https://www.papiertales.com/" target="_blank">Papier Tales</a> that outputs print quality PDFs. Books are templated in YAML, combining assets and text to output customised products for each order via cloud run jobs. I completed work on a live preview app which was embedded into the shopify site while also completing upgrades for the order processing portal including webhook integration from shopify.</p>',
   },
