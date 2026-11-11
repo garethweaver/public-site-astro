@@ -20,6 +20,10 @@ images:
       url: https://ik.imagekit.io/garethweaver/sdo-reviews-1-sm.jpg
       height: 1200
       width: 2134
+  - url: https://ik.imagekit.io/garethweaver/sdo-reviews-2.jpg
+    alt: The lighthouse scores for sdo
+    height: 1062
+    width: 1900
 next_page: /veme
 meta:
   title: Gareth Weaver - SDO Google Reviews
