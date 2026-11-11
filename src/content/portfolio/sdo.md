@@ -18,7 +18,7 @@ images:
     width: 2400
   - url: https://ik.imagekit.io/garethweaver/sdo-reviews-2.jpg
     alt: The lighthouse scores for sdo
-    height: 1062
+    height: 1610
     width: 1900
   - url: https://ik.imagekit.io/garethweaver/sd-osteopaths-1.jpg
     alt: St David's Osteopaths first deisgn from 2015
