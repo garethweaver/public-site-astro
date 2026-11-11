@@ -12,6 +12,10 @@ year: 2026
 tools: Turborepo, AstroJs, Google Cloud Run
 live_site: https://www.papiertales.com/
 images:
+  - url: https://ik.imagekit.io/garethweaver/papier-tales-3.jpg
+    alt: Papier tales creation gui
+    height: 1381
+    width: 2400
   - url: https://ik.imagekit.io/garethweaver/papier-tales-1.jpg
     alt: Papier tales dashboard
     height: 1381

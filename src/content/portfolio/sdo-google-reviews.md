@@ -20,7 +20,7 @@ images:
       url: https://ik.imagekit.io/garethweaver/sdo-reviews-1-sm.jpg
       height: 1200
       width: 2134
-next_page: /sd-osteopaths
+next_page: /veme
 meta:
   title: Gareth Weaver - SDO Google Reviews
   description: A widget that statically renders Google Reviews using GitHub
