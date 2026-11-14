@@ -14,11 +14,19 @@ live_site: https://www.papiertales.com/
 images:
   - url: https://ik.imagekit.io/garethweaver/papier-tales-3.jpg
     alt: Papier tales creation gui
-    height: 1381
+    height: 1384
     width: 2400
+  - url: https://ik.imagekit.io/garethweaver/papier-tales-4-lg.jpg
+    alt: Papier tales creation gui
+    height: 1384
+    width: 2400
+    mobile:
+      url: https://ik.imagekit.io/garethweaver/papier-tales-4-sm.jpg
+      height: 2134
+      width: 2400
   - url: https://ik.imagekit.io/garethweaver/papier-tales-1.jpg
     alt: Papier tales dashboard
-    height: 1381
+    height: 2134
     width: 2400
   - url: https://ik.imagekit.io/garethweaver/papier-tales-2.jpg
     alt: Printed copies of papier tales books
