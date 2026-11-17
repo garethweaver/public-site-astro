@@ -33,7 +33,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     title: 'CV.pdf',
-    icon: 'pdf',
+    icon: 'cv',
     props: {
       target: '_blank',
       href: '/GarethWeaverCV',
